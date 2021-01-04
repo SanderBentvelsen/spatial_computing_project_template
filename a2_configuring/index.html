@@ -14,7 +14,7 @@
     
     
       
-        <title>Pseudocode - Spatial Computing Project Template</title>
+        <title>Configuring - Spatial Computing Project Template</title>
       
     
     
@@ -93,7 +93,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Pseudocode
+              Configuring
             
           </span>
         </div>
@@ -162,28 +162,6 @@
   
 
 
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
-    <label class="md-nav__link" for="nav-3">
-      Configuring
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="Configuring" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
-        <span class="md-nav__icon md-icon"></span>
-        Configuring
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-  
-
-
   <li class="md-nav__item md-nav__item--active">
     
     <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
@@ -191,65 +169,10 @@
       
     
     
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Pseudocode
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-    
     <a href="./" class="md-nav__link md-nav__link--active">
-      Pseudocode
+      Configuring
     </a>
     
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#solar-envelope" class="md-nav__link">
-    Solar envelope
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#solar-accessibility" class="md-nav__link">
-    Solar accessibility
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sky-view-factor" class="md-nav__link">
-    Sky view factor
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#floor-level-preference" class="md-nav__link">
-    Floor level preference
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
-  </li>
-
-        
-      </ul>
-    </nav>
   </li>
 
     
@@ -477,42 +400,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#solar-envelope" class="md-nav__link">
-    Solar envelope
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#solar-accessibility" class="md-nav__link">
-    Solar accessibility
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sky-view-factor" class="md-nav__link">
-    Sky view factor
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#floor-level-preference" class="md-nav__link">
-    Floor level preference
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -529,95 +416,6 @@
 <p>Here you should include the process and product of your 2nd activity: <strong>Configuring</strong></p>
 </blockquote>
 <table><thead><tr class="header"><th>Title</th><th>Configuring (process): Circulation Manifold (product)</th></tr></thead><tbody><tr class="odd"><td>Objective</td><td>Formulate a spatial (topological) concept, design a modular circulation manifold on a pixel/voxel grid.</td></tr><tr class="even"><td>Procedure</td><td><p>Construct a voxelated model of the site with a maximum height of 100 meters. Orient the voxel grid to a global coordinate system (e.g. geographical North-East-West-South). Size the voxels carefully based on the modular height of steps and the length of stair flights and ramps so that they fit in X/Y directions into multiple pixels. Choose the Z size of voxels according to step risers and choose the same size for X and Y as a whole multiple of step threads.</p><p>There are three types of spaces in terms of pedestrian movement in buildings, metaphorically speaking, spaces to <strong>walk</strong> through (e.g. corridors, ramps, and stairs), spaces to <strong>stand</strong> on (e.g. platforms connecting doors to corridors and stairs) and spaces to <strong>sit</strong> on (functional rooms/spaces). Construct a simplified mesh model of all bridges (corridors, ramps, stairs) connected by standing platforms in a modular grid of voxels/pixels. Take into account the free-height necessary for all spaces and pack them into the bounding volume of the building. For every functional space, leave a single pixel as a standing platform and colour it with the corresponding colour.</p></td></tr></tbody></table>
-
-<h4 id="solar-envelope">Solar envelope</h4>
-<p>The created envelope will be used as the base availability lattice on which all other calculations for static data and the growing of the agends are built upon. </p>
-<p><img alt="Create an envelope based on solar blockage" src="../img/Solar envelope in lattice.png" /></p>
-<table><thead><tr class="header"><th>Pseudocode</th><th></th></tr></thead><tbody><tr class="odd"><td>Input</td><td>Voxelized envelope, context mesh</td></tr><tr class="even"><td>Output</td><td><p>Solar envelope</p></td></tr>><tr class="odd"><td>Code</td><td><p>Create a list of all vectors pointing towards the sun locations over the year.</p>
-
-<p><strong>For</strong> all voxels inside of the envelope:
-<br><Tab>Cast a ray from the list of sun vectors from the voxel centroid</Tab>
-<br><strong>If</strong> the ray intersects with a mesh:
-<br>Ignore the ray and continue the loop
-<br><strong>Else:</strong>
- <br>Check if the reversed ray intersects with a mesh
- <br><strong>If</strong> this new ray intersects with a mesh:
- <br>Register the intersection for the voxel to a new list
- <br><strong>Else:</strong>
- Register a non intersection to the list</p>
-
-<p><strong>For</strong> each voxel inside the envelope:
-<br>Map the amount of intersections in a range between 0 and 1, where
-0 means blocking a lot of light for neighbouring buildings and 1 not
-blocking any light.</p>
-
-<p>Set a limit to how much light the voxels are allowed to block and create
-a new lattice with either True or False values, depending on the amount
-of light blocked.</p>
-
-Export this lattice as the new availability lattice.</p></td></tr></tbody></table>
-
-<h4 id="solar-accessibility">Solar accessibility</h4>
-<p>This data is used for the growing algorithm by certain agents that prefer
-a high solar accessibility, for instance: the residential quarters and study
-spaces.</p>
-<p><img alt="Solar accesibility in lattice" src="../img/Solar accesibility in lattice.png" /></p>
-<table><thead><tr class="header"><th>Pseudocode</th><th></th></tr></thead><tbody><tr class="odd"><td>Input</td><td>Solar envelope, context mesh</td></tr><tr class="even"><td>Output</td><td><p>Solar accesibility lattice
-</p></td></tr>><tr class="odd"><td>Code</td><td><p>Create a list of all vectors pointing towards the sun locations over the year.</p>
-
-<p><strong>For</strong> all voxels inside of the envelope:
-<br><Tab>Cast a ray from the list of sun vectors from the voxel centroid</Tab>
-<br><strong>If</strong> the ray intersects with a mesh:
-<br>Append an intersection to a new list
-<br><strong>Else:</strong>
- <br>Append a non intersection to the list
-
-<p><strong>For</strong> each voxel inside the envelope:
-<br>Map the amount of intersections in a range between 0 and 1,
-where 1 means receiving the most of light and 0 receiving the
-least amount of light.</p>
-
-<p>Export the newly created lattice that lists the values of solar accessibility
-in a range from 0 to 1.</p></td></tr></tbody></table>
-
-<h4 id="sky-view-factor">Sky view factor</h4>
-<p>This data is used for the growing algorithm by certain agents that prefer
-a high sky view factor, for instance: the office spaces and garden.</p>
-<p><img alt="Sky view factor in lattice" src="../img/Sky view factor in lattice.png" /></p>
-<table><thead><tr class="header"><th>Pseudocode</th><th></th></tr></thead><tbody><tr class="odd"><td>Input</td><td>Solar envelope, context mesh, dome mesh</td></tr><tr class="even"><td>Output</td><td><p>Sky view factor lattice</p></td></tr>><tr class="odd"><td>Code</td><td><p>Instead of creating a list of vectors pointing towards the sun locations over the year, append the normals of a dome mesh to a list, created to
-map the sky in equal proportions. </p>
-
-<p><strong>For</strong> all voxels inside of the envelope:
-<br>Cast a ray from the list of sun vectors from the voxel centroid
-<br><strong>If</strong> the ray intersects with a mesh:
-<br>Append an intersection to a new list
-<br><strong>Else:</strong>
-<br>Append a non intersection to the list
-
-<p><strong>For</strong> each voxel inside the envelope:
-<br>Map the amount of intersections in a range between 0 and 1, where
-1 has the least intersections, which means having a high sky view
-factor and 0 the opposite.</p>
-
-<p>Export the newly created lattice that lists the values of the sky view factor
-in a range from 0 to 1.</p></td></tr></tbody></table>
-
-<h4 id="floor-level-preference">Floor level preference</h4>
-<p>This data is used for the growing algorithm by certain agents that prefer
-a proximity to certain floors, for instance: the hub and garden prefer to
-be on the ground floor.</p>
-<p><img alt="Floor closeness in lattice" src="../img/Floor closeness in lattice.png" /></p>
-<table><thead><tr class="header"><th>Pseudocode</th><th></th></tr></thead><tbody><tr class="odd"><td>Input</td><td>Solar envelope</td></tr><tr class="even"><td>Output</td><td><p>Floor level preference</p></td></tr>><tr class="odd"><td>Code</td><td><ul><li>Create a list of entries based on the height of the imported lattice</li>
-<li>Create a matrix that maps the neighbouring entries as if connected from
-bottom to top</li>
-<li>Select an entry as you would select a floor level (in the visualization it’s 0)</li>
-<li>Calculate the distance from that entry to every other one</li>
-<li>Map the values from 0 to 1, where 1 is the entry itself and 0 for the entry
-that is the furthest from the selected one. Then append them from
-bottom to top to in a one dimensional array</li>
-<li>Map this array along the z-axis of the entire imported lattice</li>
-<li>Multiply this newly created lattice with the solar envelope to set all
-unoccupied voxels to 0 and export it</li></ul></td></tr></tbody></table>
                 
               
               

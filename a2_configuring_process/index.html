@@ -251,51 +251,71 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#static-data" class="md-nav__link">
+    Static data
+  </a>
+  
+    <nav class="md-nav" aria-label="Static data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#solar-envelope" class="md-nav__link">
     Solar envelope
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#solar-accessibility" class="md-nav__link">
     Solar accessibility
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#sky-view-factor" class="md-nav__link">
     Sky view factor
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#floor-level-preference" class="md-nav__link">
     Floor level preference
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#closeness-to-the-facade" class="md-nav__link">
     Closeness to the facade
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
+  <a href="#closeness-to-a-specific-facade" class="md-nav__link">
+    Closeness to a specific facade
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#quietness-from-street-noise" class="md-nav__link">
     Quietness from street noise
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#entrance-accessibility" class="md-nav__link">
     Entrance accessibility
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -628,51 +648,71 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#static-data" class="md-nav__link">
+    Static data
+  </a>
+  
+    <nav class="md-nav" aria-label="Static data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#solar-envelope" class="md-nav__link">
     Solar envelope
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#solar-accessibility" class="md-nav__link">
     Solar accessibility
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#sky-view-factor" class="md-nav__link">
     Sky view factor
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#floor-level-preference" class="md-nav__link">
     Floor level preference
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#closeness-to-the-facade" class="md-nav__link">
     Closeness to the facade
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
+  <a href="#closeness-to-a-specific-facade" class="md-nav__link">
+    Closeness to a specific facade
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#quietness-from-street-noise" class="md-nav__link">
     Quietness from street noise
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#entrance-accessibility" class="md-nav__link">
     Entrance accessibility
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -695,7 +735,11 @@
 </blockquote>
 <table><thead><tr class="header"><th>Title</th><th>Configuring (process): Circulation Manifold (product)</th></tr></thead><tbody><tr class="odd"><td>Objective</td><td>Formulate a spatial (topological) concept, design a modular circulation manifold on a pixel/voxel grid.</td></tr><tr class="even"><td>Procedure</td><td><p>Construct a voxelated model of the site with a maximum height of 100 meters. Orient the voxel grid to a global coordinate system (e.g. geographical North-East-West-South). Size the voxels carefully based on the modular height of steps and the length of stair flights and ramps so that they fit in X/Y directions into multiple pixels. Choose the Z size of voxels according to step risers and choose the same size for X and Y as a whole multiple of step threads.</p><p>There are three types of spaces in terms of pedestrian movement in buildings, metaphorically speaking, spaces to <strong>walk</strong> through (e.g. corridors, ramps, and stairs), spaces to <strong>stand</strong> on (e.g. platforms connecting doors to corridors and stairs) and spaces to <strong>sit</strong> on (functional rooms/spaces). Construct a simplified mesh model of all bridges (corridors, ramps, stairs) connected by standing platforms in a modular grid of voxels/pixels. Take into account the free-height necessary for all spaces and pack them into the bounding volume of the building. For every functional space, leave a single pixel as a standing platform and colour it with the corresponding colour.</p></td></tr></tbody></table>
 
+<h2 id="static-data">Static data</h2>
 <h4 id="solar-envelope">Solar envelope</h4>
+<blockquote>
+<p>Create an envelope based on solar blockage</p>
+</blockquote>
 <p>The created envelope will be used as the base availability lattice on which all other calculations for static data and the growing of the agends are built upon. </p>
 <p><img alt="Create an envelope based on solar blockage" src="../img/Solar envelope in lattice.png" /></p>
 <table><thead><tr class="header"><th>Pseudocode</th><th></th></tr></thead><tbody><tr class="odd"><td>Input</td><td>Voxelized envelope, context mesh</td></tr><tr class="even"><td>Output</td><td><p>Solar envelope</p></td></tr><tr class="odd"><td>Code</td><td><p>Create a list of all vectors pointing towards the sun locations over the year.</p>
@@ -724,6 +768,9 @@ Export this lattice as the new availability lattice.</p></td></tr></tbody></tabl
 
 <p><img alt="Solar icons3" src="../img/Solar icons3.png" /></p>
 <h4 id="solar-accessibility">Solar accessibility</h4>
+<blockquote>
+<p>Ensure spaces get enough sunlight</p>
+</blockquote>
 <p>This data is used for the growing algorithm by certain agents that prefer
 a high solar accessibility, for instance: the residential quarters and study
 spaces.</p>
@@ -748,8 +795,11 @@ in a range from 0 to 1.</p></td></tr></tbody></table>
 
 <p><img alt="Solar icons" src="../img/Solar icons.png" /></p>
 <h4 id="sky-view-factor">Sky view factor</h4>
-<p>This data is used for the growing algorithm by certain agents that prefer
+<blockquote>
+<p>Ensure functions are able to see enough of the sky
+This data is used for the growing algorithm by certain agents that prefer
 a high sky view factor, for instance: the office spaces and garden.</p>
+</blockquote>
 <p><img alt="Sky view factor in lattice" src="../img/Sky view factor in lattice.png" /></p>
 <table><thead><tr class="header"><th>Pseudocode</th><th></th></tr></thead><tbody><tr class="odd"><td>Input</td><td>Solar envelope, context mesh, dome mesh</td></tr><tr class="even"><td>Output</td><td><p>Sky view factor lattice</p></td></tr><tr class="odd"><td>Code</td><td><p>Instead of creating a list of vectors pointing towards the sun locations over the year, append the normals of a dome mesh to a list, created to
 map the sky in equal proportions. </p>
@@ -771,9 +821,12 @@ in a range from 0 to 1.</p></td></tr></tbody></table>
 
 <p><img alt="Solar icons2" src="../img/Solar icons2.png" /></p>
 <h4 id="floor-level-preference">Floor level preference</h4>
-<p>This data is used for the growing algorithm by certain agents that prefer
+<blockquote>
+<p>Set floor levels for agents
+This data is used for the growing algorithm by certain agents that prefer
 a proximity to certain floors, for instance: the hub and garden prefer to
 be on the ground floor.</p>
+</blockquote>
 <p><img alt="Floor closeness in lattice" src="../img/Floor closeness in lattice.png" /></p>
 <table><thead><tr class="header"><th>Pseudocode</th><th></th></tr></thead><tbody><tr class="odd"><td>Input</td><td>Solar envelope</td></tr><tr class="even"><td>Output</td><td><p>Floor level preference</p></td></tr><tr class="odd"><td>Code</td><td><ul><li>Create a list of entries based on the height of the imported lattice</li>
 <li>Create a matrix that maps the neighbouring entries as if connected from
@@ -789,6 +842,9 @@ unoccupied voxels to 0 and export it</li></ul></td></tr></tbody></table>
 
 <p><img alt="Ground floor preference" src="../img/Ground floor preference.png" /></p>
 <h4 id="closeness-to-the-facade">Closeness to the facade</h4>
+<blockquote>
+<p>Ensure access to the facade</p>
+</blockquote>
 <p>This is another parameter to optimize the placement of spaces that need direct daylight or adjacency to the street. </p>
 <p><img alt="closeness to facade" src="../img/closeness to facade.png" /></p>
 <table><thead><tr class="header"><th>Pseudocode</th><th></th></tr></thead><tbody><tr class="odd"><td>Input</td><td>Availability lattice, custom stencil</td></tr><tr class="even"><td>Output</td><td><p>Facade closeness lattice</p></td></tr><tr class="odd"><td>Code</td><td><p><li>Define stencil as Von Neumann neighborhood with top and bottom neighbors removed.</li>
@@ -809,27 +865,64 @@ unoccupied voxels to 0 and export it</li></ul></td></tr></tbody></table>
 </td></tr></tbody></table>
 
 <p><img alt="Closeness to facade_icon" src="../img/Closeness to facade_icon.png" /></p>
-<h4 id="quietness-from-street-noise">Quietness from street noise</h4>
-<p>The two main streets around the plot produce significant traffic noise. According to European Environment Agency, these streets produce 50 and 70db of noise. By mapping the noise fall-off from the street, the growth algorithm can take into account the spaces where quietness is especially preferable, such as the library.</p>
-<p><img alt="Quietness from street noise" src="../img/Quietness from street noise.png" /></p>
-<table><thead><tr class="header"><th>Pseudocode</th><th></th></tr></thead><tbody><tr class="odd"><td>Input</td><td>Avalability lattice, meshes representing the streets with different noise levels</td></tr><tr class="even"><td>Output</td><td><p>Quietness from street noise lattice</p></td></tr><tr class="odd"><td>Code</td><td><p>Load several meshes representing streets with different noise levels.
-<br>Get all voxel centers as points.</p>
+<h4 id="closeness-to-a-specific-facade">Closeness to a specific facade</h4>
+<blockquote>
+<p>Orient for site accessability on a specific side</p>
+</blockquote>
+<p>Some spaces and entrances require access to a specific facade based on traffic routes and greenery on the site. While they need to be dajcent to the facade, they do not need to be fixed in a specific place. The data field is used to create axes on each facade, to let the program choose the best location on it.</p>
+<p><img alt="closeness to facade" src="../img/closeness to facade.png" /></p>
+<table><thead><tr class="header"><th>Pseudocode</th><th></th></tr></thead><tbody><tr class="odd"><td>Input</td><td>Availability lattice, custom stencil</td></tr><tr class="even"><td>Output</td><td><p>Specific facade closeness lattice</p></td></tr><tr class="odd"><td>Code</td><td><p><li>efine stencil where only one voxel represents the neighborhood and this neighbor is oriented in the direction of the desired facade</li>
+<li>Apply the stencil to the voxel envelope.</li>
+<li>Find the number of neighbors for each voxel in the lattice.</li></p>
 
-<p><strong>For</strong> each voxel:
-<br>Calculate the smallest euclidian distance from voxel center to the first street mesh, using trimesh.proximity.
-<br>Using the inverse square law, calculate noise values from the acquired distance and data of level of noise on the street. 
-<br>Add the noise value to the corresponding voxel in the value field.</p>
+<p><li>Create a condition for specific facade boundary voxels, where the number of neighbors is < 1</li>
+<li>Check envelope with the condition, create a new envelope with only specific facade boundary voxels</li>
+<li>Create an adjacency matrix full of 0’s</li>
+<li><strong>For</strong> each available voxel in the envelope:<br>Fill in its neighbor’s ID’s in the adjacency matrix</li></p>
 
-
-<p>Map the inverse field of noise values to a field of quietness values from 0 - 1, where 0 is the least quiet value and 1 is the quietest value.</p>
-
-<p>Repeat quietness value field construction for the second street.
-<br>Combine the quietness value fields by choosing the lowest quietness values for each point in the field.</p>
+<p><li>Compute distances from all voxels to all voxels.</li>
+<li>Select the distances between boundary voxels and all other voxels.</li>
+<li>Find the minimum distance for all voxels to any specific facade boundary voxel</li>
+<li>Add the minimum distance to the corresponding voxel value field.</li>
+<li>Map the field distance values from 0 - 1, where 0 is the furthest distance and 1 is the closest to the specific facade</li></p>
 
 </td></tr></tbody></table>
 
 <p><img alt="Closeness to NE facade_icon" src="../img/Closeness to NE facade_icon.png" /></p>
+<h4 id="quietness-from-street-noise">Quietness from street noise</h4>
+<blockquote>
+<p>Orient according to traffic noise fall-off</p>
+</blockquote>
+<p>The two main streets around the plot produce significant traffic noise. According to European Environment Agency, these streets produce 50 and 70db of noise. By mapping the noise fall-off from the street, the growth algorithm can take into account the spaces where quietness is especially preferable, such as the library.</p>
+<p><img alt="Quietness from street noise" src="../img/Quietness from street noise_2.png" /></p>
+<table><thead><tr class="header"><th>Pseudocode</th><th></th></tr></thead><tbody><tr class="odd"><td>Input</td><td>Avalability lattice, meshes representing the streets with different noise levels</td></tr><tr class="even"><td>Output</td><td><p>Quietness from street noise lattice</p></td></tr><tr class="odd"><td>Code</td><td><p>Load several meshes representing streets with different noise levels.
+
+<br>Get all voxel centers as points.</p>
+Get all voxel 3d IDs
+Initialize a distance lattice full of 0s
+
+<p><strong>For</strong> each voxel:
+<br> Calculate the smallest euclidian distance from voxel center to the first street mesh, using trimesh.proximity.
+<br>Write the distance value in the distance lattice for the current voxel
+<br>Compute the noise dB’s for each voxel in a lattice from the distance lattice using noise formula and noise level for first street</p>
+
+<p>Initialize a summing lattice 
+<br>Convert the logarithmic scale into a decimal scale, sum it to the summing lattice<p>
+
+<p>Repeat the for loop for the second street
+<br>Convert the logarithmic scale into a decimal scale, sum it to the summing lattice<p>
+
+<p>Compute the aggregated noise lattice by converting the summing lattice back to logarithmic scale<p>
+
+<p>Map the inverse field of noise values to a field of quietness values from 0 - 1, where 0 is the least quiet value and 1 is the quietest value.<p>
+
+</td></tr></tbody></table>
+
+<p><img alt="Closeness to NE facade_icon" src="../img/Quietness from street noise (2).png" /></p>
 <h4 id="entrance-accessibility">Entrance accessibility</h4>
+<blockquote>
+<p>Ensure access to an entrance</p>
+</blockquote>
 <p>To make sure the agents who need to be close to an entrace can grow in that direction, an entrance accessibility lattice must be created.</p>
 <p><img alt="entrance access" src="../img/entrance access.png" /></p>
 <table><thead><tr class="header"><th>Pseudocode</th><th></th></tr></thead><tbody><tr class="odd"><td>Input</td><td>Voxelized envelope, entrance locations based on street accessibility</td></tr><tr class="even"><td>Output</td><td><p>Entrance Lattice</p></td></tr><tr class="odd"><td>Code</td><td>Set the entrance voxels based on the entrance locations.
@@ -840,7 +933,7 @@ unoccupied voxels to 0 and export it</li></ul></td></tr></tbody></table>
 <br>Construct the entrance lattice. 
 </td></tr></tbody></table>
 
-<p><img alt="Quietness from street noise (2)" src="../img/Quietness from street noise (2).png" /></p>
+<p><img alt="Quietness from street noise (2)" src="../img/Accessibility_coloured.png" /></p>
                 
               
               

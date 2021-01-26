@@ -1,0 +1,1949 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.5">
+    
+    
+      
+        <title>MCDA growth & shafts and corridors notebook - Spatial Computing Project Template</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.21aed14c.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.196e0c26.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../css/ansi-colours.css">
+    
+      <link rel="stylesheet" href="../../css/jupyter-cells.css">
+    
+      <link rel="stylesheet" href="../../css/pandas-dataframe.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#mcda-seed-allocation-voxel-occupation-shaft-and-corridor-growth" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../.." title="Spatial Computing Project Template" class="md-header-nav__button md-logo" aria-label="Spatial Computing Project Template">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Spatial Computing Project Template
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+               MCDA growth & shafts and corridors notebook
+            
+          </span>
+        </div>
+      
+    </div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Spatial Computing Project Template" class="md-nav__button md-logo" aria-label="Spatial Computing Project Template">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Spatial Computing Project Template
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
+    <label class="md-nav__link" for="nav-2">
+      Planning
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Planning" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Planning
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../a1_planning_process/" class="md-nav__link">
+      Process
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../a1_planning_product/" class="md-nav__link">
+      Product
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+    <label class="md-nav__link" for="nav-3">
+      Configuring
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Configuring" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Configuring
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../a2_configuring_process/" class="md-nav__link">
+      Process
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../a2_configuring_product/" class="md-nav__link">
+      Product
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+    <label class="md-nav__link" for="nav-4">
+      Massing
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Massing" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        Massing
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../a3_massing_process/" class="md-nav__link">
+      Process
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../a3_massing_product/" class="md-nav__link">
+      Product
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" >
+    <label class="md-nav__link" for="nav-5">
+      Forming
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Forming" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon"></span>
+        Forming
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../a4_forming_process/" class="md-nav__link">
+      Process
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../a4_forming_product/" class="md-nav__link">
+      Product
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../a5_reflection/" class="md-nav__link">
+      Reflection
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../about/" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8" >
+    <label class="md-nav__link" for="nav-8">
+      Index
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Index" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        <span class="md-nav__icon md-icon"></span>
+        Index
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../index/figures/" class="md-nav__link">
+      Figures
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../index/presentations/" class="md-nav__link">
+      Presentations
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9" >
+    <label class="md-nav__link" for="nav-9">
+      Notebooks
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Notebooks" data-md-level="1">
+      <label class="md-nav__title" for="nav-9">
+        <span class="md-nav__icon md-icon"></span>
+        Notebooks
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_Voxelize%20notebook/" class="md-nav__link">
+      Voxelize notebook
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_Solar%20studies%20notebook/" class="md-nav__link">
+      Solar studies notebook
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_Facade%20closeness%20notebook/" class="md-nav__link">
+      Facade closeness notebook
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_Floor%20closeness%20notebook/" class="md-nav__link">
+      Floor closeness notebook
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_Entrance%20closeness%20notebook/" class="md-nav__link">
+      Entrance closeness notebook
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_Quietness%20notebook/" class="md-nav__link">
+      Quietness notebook
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../solar_studies.ipynb" class="md-nav__link">
+      MCDA growth & shafts and corridors notebook
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#0-initialization" class="md-nav__link">
+    0. Initialization
+  </a>
+  
+    <nav class="md-nav" aria-label="0. Initialization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-load-required-libraries" class="md-nav__link">
+    0.1. Load required libraries
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#021-define-the-neighborhood-stencil" class="md-nav__link">
+    0.2.1 Define the Neighborhood (Stencil)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#022-custom-neighbours-function-to-circumvent-bugs" class="md-nav__link">
+    0.2.2 Custom neighbours function to circumvent bugs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-load-the-envelope-lattice-as-the-avialbility-lattice" class="md-nav__link">
+    0.3. Load the envelope lattice as the avialbility lattice
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-load-agents-information" class="md-nav__link">
+    0.4. Load Agents Information
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-initialize-environment-information-layers-from-sun-access-lattice-and-entrance-access-lattice" class="md-nav__link">
+    0.5. Initialize environment information layers from Sun Access Lattice and Entrance Access Lattice
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script>
+(function() {
+  function addWidgetsRenderer() {
+    var mimeElement = document.querySelector('script[type="application/vnd.jupyter.widget-view+json"]');
+    var scriptElement = document.createElement('script');
+    var widgetRendererSrc = 'https://unpkg.com/@jupyter-widgets/html-manager@*/dist/embed-amd.js';
+    var widgetState;
+
+    // Fallback for older version:
+    try {
+      widgetState = mimeElement && JSON.parse(mimeElement.innerHTML);
+
+      if (widgetState && (widgetState.version_major < 2 || !widgetState.version_major)) {
+        widgetRendererSrc = 'jupyter-js-widgets@*/dist/embed.js';
+      }
+    } catch(e) {}
+
+    scriptElement.src = widgetRendererSrc;
+    document.body.appendChild(scriptElement);
+  }
+
+  document.addEventListener('DOMContentLoaded', addWidgetsRenderer);
+}());
+</script>
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="mcda-seed-allocation-voxel-occupation-shaft-and-corridor-growth">MCDA: Seed Allocation + Voxel Occupation + Shaft and corridor growth</h1>
+<p>In this notebook the agents will grow in their desired shape. Afterwards the shafts and corridors are generated inside of the generated lattice.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="0-initialization">0. Initialization</h2>
+<h3 id="01-load-required-libraries">0.1. Load required libraries</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">topogenesis</span> <span class="k">as</span> <span class="nn">tg</span>
+<span class="kn">import</span> <span class="nn">pyvista</span> <span class="k">as</span> <span class="nn">pv</span>
+<span class="kn">import</span> <span class="nn">trimesh</span> <span class="k">as</span> <span class="nn">tm</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">scipy.sparse</span> <span class="kn">import</span> <span class="n">csr_matrix</span>
+<span class="kn">from</span> <span class="nn">sklearn.cluster</span> <span class="kn">import</span> <span class="n">KMeans</span>
+<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</code></pre></div>
+
+
+
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+
+<div class="codehilite"><pre><span></span><code><span class="c1"># extra import function</span>
+<span class="k">def</span> <span class="nf">lattice_from_csv</span><span class="p">(</span><span class="n">file_path</span><span class="p">):</span>
+    <span class="c1"># read metadata</span>
+    <span class="n">meta_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">nrows</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+
+    <span class="n">shape</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">meta_df</span><span class="p">[</span><span class="s1">&#39;shape&#39;</span><span class="p">])</span>
+    <span class="n">unit</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">meta_df</span><span class="p">[</span><span class="s1">&#39;unit&#39;</span><span class="p">])</span>
+    <span class="n">minbound</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">meta_df</span><span class="p">[</span><span class="s1">&#39;minbound&#39;</span><span class="p">])</span>
+
+    <span class="c1"># read lattice</span>
+    <span class="n">lattice_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">skiprows</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+
+    <span class="c1"># create the buffer</span>
+    <span class="n">buffer</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">lattice_df</span><span class="p">[</span><span class="s1">&#39;value&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">shape</span><span class="p">)</span>
+    <span class="c1"># create the lattice</span>
+    <span class="n">l</span> <span class="o">=</span> <span class="n">tg</span><span class="o">.</span><span class="n">to_lattice</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="n">minbound</span><span class="o">=</span><span class="n">minbound</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="n">unit</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">l</span>
+</code></pre></div>
+
+
+
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="021-define-the-neighborhood-stencil">0.2.1 Define the Neighborhood (Stencil)</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+
+<div class="codehilite"><pre><span></span><code><span class="c1"># creating neighborhood definition</span>
+<span class="n">stencil</span> <span class="o">=</span> <span class="n">tg</span><span class="o">.</span><span class="n">create_stencil</span><span class="p">(</span><span class="s2">&quot;von_neumann&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="c1"># setting the center to zero</span>
+<span class="n">stencil</span><span class="o">.</span><span class="n">set_index</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="mi">0</span><span class="p">)</span>
+</code></pre></div>
+
+
+
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="022-custom-neighbours-function-to-circumvent-bugs">0.2.2 Custom neighbours function to circumvent bugs</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">neighbours</span><span class="p">(</span><span class="n">loc</span><span class="p">,</span> <span class="n">avail_lattice</span><span class="p">):</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">output_id</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">my_stencil</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+                    <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+                   <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+                   <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+                   <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+                   <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]])</span>
+
+    <span class="k">for</span> <span class="n">n</span><span class="p">,</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">my_stencil</span><span class="p">):</span>
+        <span class="n">temp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">loc</span><span class="p">)</span> <span class="o">+</span> <span class="n">i</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">avail_lattice</span><span class="p">[</span><span class="nb">tuple</span><span class="p">(</span><span class="n">temp</span><span class="p">)]</span> <span class="o">==</span> <span class="kc">True</span> <span class="ow">and</span> <span class="n">occ_lattice</span><span class="p">[</span><span class="nb">tuple</span><span class="p">(</span><span class="n">temp</span><span class="p">)]</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+                <span class="n">output</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">temp</span><span class="p">)</span>    
+        <span class="k">except</span><span class="p">:</span>
+            <span class="k">pass</span>
+    <span class="k">return</span> <span class="n">output</span>
+</code></pre></div>
+
+
+
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="03-load-the-envelope-lattice-as-the-avialbility-lattice">0.3. Load the envelope lattice as the avialbility lattice</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+
+<div class="codehilite"><pre><span></span><code><span class="c1"># loading the lattice from csv</span>
+<span class="n">lattice_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">relpath</span><span class="p">(</span><span class="s1">&#39;../data/324/solar_envelope_324.csv&#39;</span><span class="p">)</span>
+<span class="n">avail_lattice</span> <span class="o">=</span> <span class="n">lattice_from_csv</span><span class="p">(</span><span class="n">lattice_path</span><span class="p">)</span>
+<span class="n">init_avail_lattice</span> <span class="o">=</span> <span class="n">tg</span><span class="o">.</span><span class="n">to_lattice</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">avail_lattice</span><span class="p">),</span> <span class="n">avail_lattice</span><span class="p">)</span>
+</code></pre></div>
+
+
+
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="04-load-agents-information">0.4. Load Agents Information</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+
+<div class="codehilite"><pre><span></span><code><span class="c1"># loading program (agents information) from CSV</span>
+<span class="n">prgm_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">relpath</span><span class="p">(</span><span class="s1">&#39;../data/324/Relations - Blad11.csv&#39;</span><span class="p">)</span>
+<span class="n">agn_info</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">genfromtxt</span><span class="p">(</span><span class="n">prgm_path</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">:,</span> <span class="mi">1</span><span class="p">:]</span>
+<span class="c1"># extract agent ids</span>
+
+<span class="n">length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">agn_info</span><span class="p">)</span>
+
+<span class="n">agn_ids</span> <span class="o">=</span> <span class="n">agn_info</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span>
+
+<span class="n">agn_prefs</span> <span class="o">=</span> <span class="n">agn_info</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">:]</span>
+
+<span class="c1"># extract agent preferences</span>
+<span class="n">agn_prefs_env</span> <span class="o">=</span> <span class="n">agn_info</span><span class="p">[:,</span> <span class="n">length</span> <span class="o">+</span> <span class="mi">1</span><span class="p">:]</span>
+</code></pre></div>
+
+
+
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="05-initialize-environment-information-layers-from-sun-access-lattice-and-entrance-access-lattice">0.5. Initialize environment information layers from Sun Access Lattice and Entrance Access Lattice</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+
+<div class="codehilite"><pre><span></span><code><span class="c1"># loading the lattices from csv</span>
+
+<span class="n">sun_acc_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">relpath</span><span class="p">(</span><span class="s1">&#39;../data/324/solar_accessibility_324.csv&#39;</span><span class="p">)</span>
+<span class="n">sun_acc_lattice</span> <span class="o">=</span> <span class="n">lattice_from_csv</span><span class="p">(</span><span class="n">sun_acc_path</span><span class="p">)</span>
+
+<span class="n">svf_acc_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">relpath</span><span class="p">(</span><span class="s1">&#39;../data/324/SVF_324.csv&#39;</span><span class="p">)</span>
+<span class="n">svf_acc_lattice</span> <span class="o">=</span> <span class="n">lattice_from_csv</span><span class="p">(</span><span class="n">svf_acc_path</span><span class="p">)</span>
+
+<span class="n">gnd_floor_pref_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">relpath</span><span class="p">(</span><span class="s1">&#39;../data/324/closeness_ground_floor_324.csv&#39;</span><span class="p">)</span>
+<span class="n">gnd_floor_pref_lattice</span> <span class="o">=</span> <span class="n">lattice_from_csv</span><span class="p">(</span><span class="n">gnd_floor_pref_path</span><span class="p">)</span>
+
+<span class="n">sub_floor_pref_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">relpath</span><span class="p">(</span><span class="s1">&#39;../data/324/closeness_subterrain_324.csv&#39;</span><span class="p">)</span>
+<span class="n">sub_floor_pref_lattice</span> <span class="o">=</span> <span class="n">lattice_from_csv</span><span class="p">(</span><span class="n">sub_floor_pref_path</span><span class="p">)</span>
+
+<span class="n">coffee_pref_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">relpath</span><span class="p">(</span><span class="s1">&#39;../data/324/closeness_coffee_corner_324.csv&#39;</span><span class="p">)</span>
+<span class="n">coffee_pref_lattice</span> <span class="o">=</span> <span class="n">lattice_from_csv</span><span class="p">(</span><span class="n">coffee_pref_path</span><span class="p">)</span>
+
+<span class="n">vis_ent_pref_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">relpath</span><span class="p">(</span><span class="s1">&#39;../data/324/closeness_visitors_entrance_324.csv&#39;</span><span class="p">)</span>
+<span class="n">vis_ent_pref_lattice</span> <span class="o">=</span> <span class="n">lattice_from_csv</span><span class="p">(</span><span class="n">vis_ent_pref_path</span><span class="p">)</span>
+
+<span class="n">facade_pref_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">relpath</span><span class="p">(</span><span class="s1">&#39;../data/324/closeness_to_facade_324.csv&#39;</span><span class="p">)</span>
+<span class="n">facade_pref_lattice</span> <span class="o">=</span> <span class="n">lattice_from_csv</span><span class="p">(</span><span class="n">facade_pref_path</span><span class="p">)</span>
+
+<span class="n">park_ent_pref_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">relpath</span><span class="p">(</span><span class="s1">&#39;../data/324/closeness_car_park_entrance_324.csv&#39;</span><span class="p">)</span>
+<span class="n">park_ent_pref_lattice</span> <span class="o">=</span> <span class="n">lattice_from_csv</span><span class="p">(</span><span class="n">park_ent_pref_path</span><span class="p">)</span>
+
+<span class="n">NE_pref_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">relpath</span><span class="p">(</span><span class="s1">&#39;../data/324/closeness_to_NE_facade_324.csv&#39;</span><span class="p">)</span>
+<span class="n">NE_pref_lattice</span> <span class="o">=</span> <span class="n">lattice_from_csv</span><span class="p">(</span><span class="n">NE_pref_path</span><span class="p">)</span>
+
+<span class="n">NW_pref_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">relpath</span><span class="p">(</span><span class="s1">&#39;../data/324/closeness_to_NW_facade_324.csv&#39;</span><span class="p">)</span>
+<span class="n">NW_pref_lattice</span> <span class="o">=</span> <span class="n">lattice_from_csv</span><span class="p">(</span><span class="n">NW_pref_path</span><span class="p">)</span>
+
+<span class="n">SE_pref_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">relpath</span><span class="p">(</span><span class="s1">&#39;../data/324/closeness_to_SE_facade_324.csv&#39;</span><span class="p">)</span>
+<span class="n">SE_pref_lattice</span> <span class="o">=</span> <span class="n">lattice_from_csv</span><span class="p">(</span><span class="n">SE_pref_path</span><span class="p">)</span>
+
+<span class="n">SW_pref_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">relpath</span><span class="p">(</span><span class="s1">&#39;../data/324/closeness_to_SW_facade_324.csv&#39;</span><span class="p">)</span>
+<span class="n">SW_pref_lattice</span> <span class="o">=</span> <span class="n">lattice_from_csv</span><span class="p">(</span><span class="n">SW_pref_path</span><span class="p">)</span>
+
+<span class="n">vis_ent_pref_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">relpath</span><span class="p">(</span><span class="s1">&#39;../data/324/closeness_visitors_entrance_324.csv&#39;</span><span class="p">)</span>
+<span class="n">vis_ent_pref_lattice</span> <span class="o">=</span> <span class="n">lattice_from_csv</span><span class="p">(</span><span class="n">vis_ent_pref_path</span><span class="p">)</span>
+
+<span class="c1"># list the environment information layers (lattices)</span>
+
+<span class="n">env_info</span> <span class="o">=</span> <span class="p">[</span><span class="n">sun_acc_lattice</span><span class="p">,</span> <span class="n">svf_acc_lattice</span><span class="p">,</span> <span class="n">gnd_floor_pref_lattice</span><span class="p">,</span> <span class="n">sub_floor_pref_lattice</span><span class="p">,</span>
+            <span class="n">coffee_pref_lattice</span><span class="p">,</span> <span class="n">vis_ent_pref_lattice</span><span class="p">,</span> <span class="n">park_ent_pref_lattice</span><span class="p">,</span> <span class="n">NE_pref_lattice</span><span class="p">,</span> 
+            <span class="n">NW_pref_lattice</span><span class="p">,</span> <span class="n">SE_pref_lattice</span><span class="p">,</span> <span class="n">SW_pref_lattice</span><span class="p">,</span> <span class="n">facade_pref_lattice</span><span class="p">]</span>
+</code></pre></div>
+
+
+
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+
+<div class="codehilite"><pre><span></span><code><span class="c1"># Fixing a fault in one of the lattices</span>
+
+<span class="n">facade_pref_lattice2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="nb">len</span><span class="p">(</span><span class="n">facade_pref_lattice</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">facade_pref_lattice</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="nb">len</span><span class="p">(</span><span class="n">facade_pref_lattice</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span> <span class="o">-</span> <span class="mi">2</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">facade_pref_lattice</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span><span class="p">,</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+
+        <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="n">facade_pref_lattice2</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">y</span>
+
+<span class="n">facade_pref_lattice</span> <span class="o">=</span> <span class="n">facade_pref_lattice2</span>
+
+<span class="n">env_info</span> <span class="o">=</span> <span class="p">[</span><span class="n">sun_acc_lattice</span><span class="p">,</span> <span class="n">svf_acc_lattice</span><span class="p">,</span> <span class="n">gnd_floor_pref_lattice</span><span class="p">,</span> <span class="n">sub_floor_pref_lattice</span><span class="p">,</span>
+            <span class="n">coffee_pref_lattice</span><span class="p">,</span> <span class="n">vis_ent_pref_lattice</span><span class="p">,</span> <span class="n">park_ent_pref_lattice</span><span class="p">,</span> <span class="n">NE_pref_lattice</span><span class="p">,</span> 
+            <span class="n">NW_pref_lattice</span><span class="p">,</span> <span class="n">SE_pref_lattice</span><span class="p">,</span> <span class="n">SW_pref_lattice</span><span class="p">,</span> <span class="n">facade_pref_lattice</span><span class="p">]</span>
+</code></pre></div>
+
+
+
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="1-abm-simulation">1. ABM Simulation</h1>
+<h3 id="11-initialize-the-agents">1.1. Initialize the Agents</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+
+<div class="codehilite"><pre><span></span><code><span class="c1"># initialize the occupation lattice</span>
+<span class="n">occ_lattice</span> <span class="o">=</span> <span class="n">avail_lattice</span> <span class="o">*</span> <span class="mi">0</span> <span class="o">-</span> <span class="mi">1</span>
+
+<span class="n">test_lattice</span> <span class="o">=</span> <span class="n">avail_lattice</span> <span class="o">*</span> <span class="mi">0</span> <span class="o">-</span> <span class="mi">1</span>
+
+<span class="n">keep_distance_lattice</span> <span class="o">=</span> <span class="n">tg</span><span class="o">.</span><span class="n">to_lattice</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">occ_lattice</span><span class="p">),</span> <span class="n">occ_lattice</span><span class="p">)</span>
+
+
+<span class="c1"># Finding the index of the available voxels in avail_lattice</span>
+<span class="n">avail_flat</span> <span class="o">=</span> <span class="n">avail_lattice</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+<span class="n">avail_index</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">avail_lattice</span> <span class="o">==</span> <span class="mi">1</span><span class="p">))</span><span class="o">.</span><span class="n">T</span>
+
+<span class="c1"># count the number of spaces (rows) and intiialize an agent for each space</span>
+<span class="n">agn_num</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">agn_info</span><span class="p">)</span>
+
+<span class="c1"># adding the origins to the agents locations</span>
+<span class="n">agn_locs</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="c1"># retrieving the entrance access value of the free neighbours</span>
+<span class="k">for</span> <span class="n">a_id</span> <span class="ow">in</span> <span class="n">agn_ids</span><span class="p">:</span>    
+    <span class="n">voxel_vals</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">pot_voxels</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="c1"># retrieve agent preferences</span>
+    <span class="n">a_pref</span> <span class="o">=</span> <span class="n">agn_prefs_env</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">a_id</span><span class="p">)]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">agn_prefs_env</span><span class="p">,</span> <span class="n">a_id</span><span class="p">)</span>
+    <span class="c1"># Voxel Evaluation Loop</span>
+    <span class="k">for</span> <span class="n">pot_vox</span> <span class="ow">in</span> <span class="n">avail_index</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">avail_lattice</span><span class="p">[</span><span class="nb">tuple</span><span class="p">(</span><span class="n">pot_vox</span><span class="p">)]:</span> <span class="c1">#so if the voxel is available</span>
+            <span class="n">global_vox_value</span> <span class="o">=</span> <span class="mf">1.0</span>
+            <span class="c1"># for every lattice in the environment informations</span>
+            <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">info_lattice</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">env_info</span><span class="p">):</span>
+                <span class="c1"># Here we utilise Fuzzy Logics to be able to compare different layers </span>
+                <span class="c1"># of environmental information and evaluate the voxel for the agent. </span>
+                <span class="c1"># This method is introduced, and generalised in Pirouz Nourian dissertation: </span>
+                <span class="c1"># section 5.7.3, pp. 201-208, eq. 57. You can refer to this section for </span>
+                <span class="c1"># comprehensive mathematical details.</span>
+                <span class="n">vox_val</span> <span class="o">=</span> <span class="n">info_lattice</span><span class="p">[</span><span class="nb">tuple</span><span class="p">(</span><span class="n">pot_vox</span><span class="p">)]</span>
+                <span class="n">agn_vox_val</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">power</span><span class="p">(</span><span class="n">vox_val</span><span class="p">,</span> <span class="n">a_pref</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+                <span class="n">global_vox_value</span> <span class="o">*=</span> <span class="n">agn_vox_val</span>
+            <span class="c1"># add the neighbour value to the list of values</span>
+            <span class="n">voxel_vals</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">global_vox_value</span><span class="p">)</span>
+            <span class="n">pot_voxels</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pot_vox</span><span class="p">)</span>
+
+    <span class="c1"># convert to numpy array</span>
+    <span class="n">voxel_vals</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">voxel_vals</span><span class="p">)</span>
+    <span class="c1"># convert to numpy array</span>
+    <span class="n">pot_voxels</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">pot_voxels</span><span class="p">)</span>
+    <span class="c1"># select the neighbour with highest value </span>
+    <span class="n">selected_int</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">voxel_vals</span><span class="p">)</span>                <span class="c1">#use argsort?</span>
+    <span class="c1"># find 3D intiger index of selected neighbour</span>
+    <span class="n">selected_neigh_3d_id</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">pot_voxels</span><span class="p">[</span><span class="n">selected_int</span><span class="p">]</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
+    <span class="c1"># find the location of the newly selected neighbour</span>
+    <span class="n">selected_neigh_loc</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">selected_neigh_3d_id</span><span class="p">)</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+
+    <span class="c1"># add the newly selected neighbour location to agent locations</span>
+    <span class="n">agn_locs</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">selected_neigh_loc</span><span class="p">])</span>
+    <span class="c1"># set the newly selected neighbour as UNavailable (0) in the availability lattice</span>
+    <span class="n">avail_lattice</span><span class="p">[</span><span class="n">selected_neigh_3d_id</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="c1"># set the newly selected neighbour as OCCUPIED by current agent </span>
+    <span class="c1"># (-1 means not-occupied so a_id)</span>
+    <span class="n">occ_lattice</span><span class="p">[</span><span class="n">selected_neigh_3d_id</span><span class="p">]</span> <span class="o">=</span> <span class="n">a_id</span>
+</code></pre></div>
+
+
+
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="121-initialize-the-distance-matrices">1.2.1 Initialize the distance matrices</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+
+<div class="codehilite"><pre><span></span><code><span class="c1"># func for distance matrix for every agent seed, can be used in a kind of dynamic relaxation</span>
+<span class="c1"># find the number of all voxels</span>
+<span class="n">vox_count</span> <span class="o">=</span> <span class="n">avail_lattice</span><span class="o">.</span><span class="n">size</span> 
+
+<span class="c1"># initialize the adjacency matrix</span>
+<span class="n">adj_mtrx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">vox_count</span><span class="p">,</span><span class="n">vox_count</span><span class="p">))</span>
+<span class="c1"># Finding the index of the available voxels in avail_lattice</span>
+<span class="n">avail_index</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">avail_lattice</span> <span class="o">==</span> <span class="mi">1</span><span class="p">))</span><span class="o">.</span><span class="n">T</span>
+
+<span class="c1"># fill the adjacency matrix using the list of all neighbours</span>
+<span class="k">for</span> <span class="n">vox_loc</span> <span class="ow">in</span> <span class="n">avail_index</span><span class="p">:</span>
+    <span class="c1"># find the 1D id</span>
+    <span class="n">vox_id</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ravel_multi_index</span><span class="p">(</span><span class="n">vox_loc</span><span class="p">,</span> <span class="n">avail_lattice</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+    <span class="c1"># retrieve the list of neighbours of the voxel based on the stencil</span>
+    <span class="n">vox_neighs</span> <span class="o">=</span> <span class="n">avail_lattice</span><span class="o">.</span><span class="n">find_neighbours_masked</span><span class="p">(</span><span class="n">stencil</span><span class="p">,</span> <span class="n">loc</span> <span class="o">=</span> <span class="n">vox_loc</span><span class="p">)</span>
+    <span class="c1"># iterating over the neighbours</span>
+    <span class="k">for</span> <span class="n">neigh</span> <span class="ow">in</span> <span class="n">vox_neighs</span><span class="p">:</span>
+        <span class="c1"># setting the entry to one</span>
+        <span class="n">adj_mtrx</span><span class="p">[</span><span class="n">vox_id</span><span class="p">,</span> <span class="n">neigh</span><span class="p">]</span> <span class="o">=</span> <span class="mf">1.0</span>
+
+<span class="c1"># construct the graph </span>
+<span class="n">g</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">from_numpy_array</span><span class="p">(</span><span class="n">adj_mtrx</span><span class="p">)</span>
+
+<span class="c1"># insert the distance lattices into env_info</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">agn_num</span><span class="p">):</span>
+    <span class="n">env_info</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">avail_lattice</span> <span class="o">*</span> <span class="nb">float</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>
+</code></pre></div>
+
+
+
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="122-function-to-update-the-distance-matrices">1.2.2 Function to update the distance matrices</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">update_closeness_mtrx</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">agn_locs</span><span class="p">,</span> <span class="n">avail_lattice</span><span class="p">,</span> <span class="n">g</span>
+
+    <span class="k">for</span> <span class="n">n</span><span class="p">,</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">agn_locs</span><span class="p">):</span> 
+        <span class="n">dist_mtrx</span> <span class="o">=</span> <span class="n">avail_lattice</span> <span class="o">*</span> <span class="nb">float</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">g</span><span class="o">.</span><span class="n">nodes</span><span class="p">():</span>
+            <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">unravel_index</span><span class="p">(</span><span class="n">j</span><span class="p">,</span> <span class="n">avail_lattice</span><span class="o">.</span><span class="n">shape</span><span class="p">)[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="n">i</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">]:</span>   <span class="c1">#Calculate distance on the horizontal axis</span>
+                <span class="n">temp_vox</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">unravel_index</span><span class="p">(</span><span class="n">j</span><span class="p">,</span> <span class="n">avail_lattice</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+                <span class="n">dist_vec</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">temp_vox</span><span class="p">)</span>
+
+                <span class="c1">#now we have absolute distance, let&#39;s make it normalized closeness (0 - 1)</span>
+                <span class="n">dist_mtrx</span><span class="p">[</span><span class="n">temp_vox</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">temp_vox</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="p">:]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">dist_vec</span><span class="p">))</span>
+        <span class="n">argmax</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">dist_mtrx</span><span class="p">)</span>
+        <span class="n">loc3d</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">unravel_index</span><span class="p">(</span><span class="n">argmax</span><span class="p">,</span> <span class="n">avail_lattice</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+        <span class="n">maxdist</span> <span class="o">=</span> <span class="n">dist_mtrx</span><span class="p">[</span><span class="nb">tuple</span><span class="p">(</span><span class="n">loc3d</span><span class="p">)]</span>
+
+        <span class="n">closeness_mtrx</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">dist_mtrx</span> <span class="o">/</span> <span class="n">maxdist</span>     <span class="c1">#normalising</span>
+
+        <span class="n">env_info</span><span class="p">[</span><span class="n">n</span><span class="p">]</span><span class="o">=</span> <span class="n">closeness_mtrx</span>
+
+<span class="n">update_closeness_mtrx</span><span class="p">()</span>     <span class="c1">#first calculation after the initial seed agent placement</span>
+</code></pre></div>
+
+
+
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="13-defining-the-depth-function">1.3. Defining the depth function</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+
+<div class="codehilite"><pre><span></span><code><span class="c1">###This function makes sure the building doesn&#39;t exceed a maximum depth</span>
+
+<span class="k">def</span> <span class="nf">depth</span><span class="p">(</span><span class="n">occ_lattice</span><span class="p">,</span> <span class="n">a_id</span><span class="p">,</span> <span class="n">avail_lattice</span><span class="p">,</span> <span class="n">agn_locs</span><span class="p">,</span> <span class="n">max_depth</span><span class="p">,</span> <span class="n">max_amount</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">init_avail_lattice</span>
+
+    <span class="c1">#Loop through the agent locations</span>
+    <span class="k">for</span> <span class="n">loc</span> <span class="ow">in</span> <span class="n">agn_locs</span><span class="p">[</span><span class="n">a_id</span><span class="p">]:</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="mi">0</span>
+
+
+        <span class="n">my_stencil</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+                        <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+                       <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+                       <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]])</span>
+
+
+        <span class="n">neigh_check</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">forbidden_voxels</span> <span class="o">=</span> <span class="p">[]</span>
+
+
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">my_stencil</span><span class="p">:</span>
+            <span class="n">temp</span> <span class="o">=</span> <span class="n">loc</span>
+            <span class="c1"># append the neighbours in a given distance to neigh_check</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">max_depth</span><span class="p">):</span>
+                <span class="n">temp</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">temp</span><span class="p">))</span>
+                <span class="n">neigh_check</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">temp</span><span class="p">)</span>
+
+        <span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
+
+        <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">neigh_check</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="c1">#is the neighbours occupied by a voxel?</span>
+                <span class="k">if</span> <span class="n">avail_lattice</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">==</span> <span class="kc">False</span> <span class="ow">and</span> <span class="n">init_avail_lattice</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
+                    <span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="k">except</span><span class="p">:</span>
+                <span class="k">pass</span>
+
+        <span class="n">counter_forbidden</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">if</span> <span class="n">counter</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">neigh_check</span><span class="p">):</span>
+
+            <span class="c1">#check how many max_dist + 1 voxels aren&#39;t occupied</span>
+            <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">my_stencil</span><span class="p">:</span>
+                <span class="n">vox_loc</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">add</span><span class="p">((</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">max_depth</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)),</span> <span class="n">loc</span><span class="p">))</span>
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="n">dist_plus_one</span> <span class="o">=</span> <span class="n">occ_lattice</span><span class="p">[</span><span class="n">vox_loc</span><span class="p">]</span>
+                    <span class="k">if</span> <span class="n">dist_plus_one</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+                        <span class="n">forbidden_voxels</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">vox_loc</span><span class="p">)</span>                    
+
+                <span class="k">except</span><span class="p">:</span>
+                    <span class="k">pass</span>
+
+            <span class="c1">#make those not occupied voxels unavailable if the number of these voxels is equal to the max_amount</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">forbidden_voxels</span><span class="p">)</span> <span class="o">==</span> <span class="n">max_amount</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">forbidden_voxels</span><span class="p">:</span>
+                    <span class="n">avail_lattice</span><span class="p">[</span><span class="n">f</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">f</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">1</span><span class="p">:]</span> <span class="o">=</span> <span class="kc">False</span>
+</code></pre></div>
+
+
+
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="14-defining-the-keep_distance-function">1.4. Defining the keep_distance function</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+
+<div class="codehilite"><pre><span></span><code><span class="c1">###This function makes sure other functions don&#39;t get closer than &#39;distance&#39; to this function</span>
+
+<span class="k">def</span> <span class="nf">keep_distance</span><span class="p">(</span><span class="n">a_id</span><span class="p">,</span> <span class="n">loc</span><span class="p">,</span> <span class="n">keep_distance_lattice</span><span class="p">,</span> <span class="n">distance</span><span class="p">,</span> <span class="n">avail_lattice</span><span class="p">,</span> <span class="n">switch</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">occ_lattice</span>
+    <span class="n">my_stencil</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+                    <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+                   <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+                   <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]])</span>
+
+    <span class="k">def</span> <span class="nf">recurse</span><span class="p">(</span><span class="n">my_stencil</span><span class="p">,</span> <span class="n">loc</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">keep_distance_lattice</span><span class="p">):</span>    <span class="c1">#recursive function to find all voxels within a radius</span>
+
+        <span class="k">if</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">my_stencil</span><span class="p">:</span>
+                <span class="n">recurse</span><span class="p">(</span><span class="n">my_stencil</span><span class="p">,</span> <span class="n">loc</span><span class="o">+</span><span class="n">i</span><span class="p">,</span> <span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">keep_distance_lattice</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">keep_distance_lattice</span><span class="p">[</span><span class="n">loc</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">loc</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">3</span><span class="p">:]</span> <span class="o">=</span> <span class="n">a_id</span>    <span class="c1">#set the keep_distance_lattice to the agent id</span>
+            <span class="k">except</span><span class="p">:</span>
+                <span class="k">pass</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">distance</span><span class="p">):</span>
+        <span class="n">recurse</span><span class="p">(</span><span class="n">my_stencil</span><span class="p">,</span> <span class="n">loc</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">keep_distance_lattice</span><span class="p">)</span>
+</code></pre></div>
+
+
+
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="21-the-simulation">2.1. The simulation</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+
+<div class="codehilite"><pre><span></span><code><span class="c1"># make a deep copy of occupation lattice</span>
+<span class="n">cur_occ_lattice</span> <span class="o">=</span> <span class="n">tg</span><span class="o">.</span><span class="n">to_lattice</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">occ_lattice</span><span class="p">),</span> <span class="n">occ_lattice</span><span class="p">)</span>
+<span class="c1"># initialzing the list of frames</span>
+<span class="n">frames</span> <span class="o">=</span> <span class="p">[</span><span class="n">cur_occ_lattice</span><span class="p">]</span>
+
+
+<span class="c1"># setting the time variable to 0</span>
+<span class="n">t</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">n_frames</span> <span class="o">=</span> <span class="mi">1700</span>
+<span class="n">threshold</span> <span class="o">=</span> <span class="mi">100</span>     <span class="c1">#for how many iterations should the seed agents walk around</span>
+<span class="n">forbidden</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">have_max_depth</span> <span class="o">=</span> <span class="p">[</span><span class="mi">11</span><span class="p">,</span> <span class="mi">21</span><span class="p">]</span> <span class="c1"># selecting functions that have a max depth</span>
+<span class="n">squareness_factor</span> <span class="o">=</span> <span class="mf">1.5</span>
+<span class="n">are_square</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">24</span><span class="p">]</span> <span class="c1"># selecting specific functions to be more square</span>
+<span class="n">most_recent</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">agn_num</span><span class="p">)</span>
+
+
+<span class="c1"># Simulation Loop</span>
+<span class="c1"># main feedback loop of the simulation (for each time step ...)</span>
+<span class="k">while</span> <span class="n">t</span><span class="o">&lt;</span><span class="n">n_frames</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+    <span class="c1"># Agent Loop</span>
+    <span class="c1"># for each agent ... </span>
+    <span class="k">for</span> <span class="n">a_id</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">agn_num</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">agn_locs</span><span class="p">[</span><span class="n">a_id</span><span class="p">])</span> <span class="o">&lt;=</span> <span class="n">agn_prefs</span><span class="p">[</span><span class="n">a_id</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span> <span class="c1"># </span>
+            <span class="c1"># retrieve the list of the locations of the current agent</span>
+            <span class="n">a_locs</span> <span class="o">=</span> <span class="n">agn_locs</span><span class="p">[</span><span class="n">a_id</span><span class="p">]</span>
+            <span class="c1"># initialize the list of free neighbours</span>
+            <span class="n">free_neighs</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="n">free_neighs_1d</span> <span class="o">=</span> <span class="p">[]</span>
+
+            <span class="n">switch</span> <span class="o">=</span> <span class="kc">True</span>      <span class="c1">#use the depth function? Mainly for troubleshooting reasons</span>
+
+            <span class="k">if</span> <span class="n">switch</span> <span class="o">==</span> <span class="kc">True</span> <span class="ow">and</span> <span class="p">(</span><span class="n">a_id</span> <span class="ow">in</span> <span class="n">have_max_depth</span><span class="p">)</span> <span class="ow">and</span> <span class="n">t</span> <span class="o">&gt;</span> <span class="n">threshold</span><span class="p">:</span>   
+                <span class="n">depth</span><span class="p">(</span><span class="n">occ_lattice</span><span class="p">,</span> <span class="n">a_id</span><span class="p">,</span> <span class="n">avail_lattice</span><span class="p">,</span> <span class="n">agn_locs</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+            <span class="c1"># Location loop</span>
+            <span class="c1"># for each location of the agent</span>
+            <span class="k">for</span> <span class="n">loc</span> <span class="ow">in</span> <span class="n">a_locs</span><span class="p">:</span>
+
+
+                <span class="c1"># retrieve the list of neighbours of the agent based on the stencil</span>
+                <span class="n">neighs</span> <span class="o">=</span> <span class="n">neighbours</span><span class="p">(</span><span class="n">loc</span><span class="p">,</span> <span class="n">avail_lattice</span><span class="p">)</span>
+
+                <span class="c1"># for each neighbour ... </span>
+                <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">neighs</span>
+
+                    <span class="c1"># if the neighbour is available                    </span>
+                    <span class="k">if</span> <span class="p">((</span><span class="n">avail_lattice</span><span class="p">[</span><span class="nb">tuple</span><span class="p">(</span><span class="n">n</span><span class="p">)]</span> <span class="ow">or</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">loc</span><span class="p">)</span> <span class="o">==</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">n</span><span class="p">))</span><span class="o">.</span><span class="n">all</span><span class="p">())</span> <span class="ow">and</span> 
+                        <span class="p">(</span><span class="n">keep_distance_lattice</span><span class="p">[</span><span class="nb">tuple</span><span class="p">(</span><span class="n">n</span><span class="p">)]</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span> <span class="ow">or</span> <span class="p">(</span><span class="n">keep_distance_lattice</span><span class="p">[</span><span class="nb">tuple</span><span class="p">(</span><span class="n">n</span><span class="p">)]</span> <span class="o">==</span> <span class="n">a_id</span><span class="p">)))</span>
+
+                        <span class="c1">#if the agents are walking around</span>
+                        <span class="k">if</span> <span class="n">t</span> <span class="o">&lt;</span> <span class="n">threshold</span><span class="p">:</span>
+                            <span class="n">free_neighs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+                            <span class="n">free_neighs_1d</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">ravel_multi_index</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">avail_lattice</span><span class="o">.</span><span class="n">shape</span><span class="p">))</span>
+
+                        <span class="c1">#else: the growing phase has started</span>
+                        <span class="k">else</span><span class="p">:</span>
+                            <span class="n">temp_down</span> <span class="o">=</span> <span class="p">[</span><span class="n">n</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">n</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">n</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>
+
+                            <span class="c1">#if the function cannot grow underground, the z value should be between 1 and 5 or the voxel below</span>
+                            <span class="c1">#should also be occupied</span>
+                            <span class="k">if</span> <span class="n">t</span> <span class="o">&gt;=</span> <span class="n">threshold</span> <span class="ow">and</span> <span class="ow">not</span> <span class="p">(</span><span class="n">a_id</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">a_id</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">or</span> <span class="n">a_id</span> <span class="o">==</span> <span class="mi">22</span><span class="p">)</span> <span class="ow">and</span> <span class="n">n</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="ow">and</span> <span class="p">((</span><span class="mi">1</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">)</span> <span class="ow">or</span> <span class="p">((</span><span class="n">occ_lattice</span><span class="p">[</span><span class="nb">tuple</span><span class="p">(</span><span class="n">temp_up</span><span class="p">)]</span> <span class="o">==</span> <span class="n">a_id</span><span class="p">)</span> <span class="ow">or</span> 
+                                              <span class="p">(</span><span class="n">occ_lattice</span><span class="p">[</span><span class="nb">tuple</span><span class="p">(</span><span class="n">temp_down</span><span class="p">)]</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">))):</span>
+
+                                <span class="n">free_neighs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+                                <span class="n">free_neighs_1d</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">ravel_multi_index</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">avail_lattice</span><span class="o">.</span><span class="n">shape</span><span class="p">))</span>
+
+                            <span class="c1">#if the function must grow underground, the z value should be 1</span>
+                            <span class="k">elif</span> <span class="n">t</span> <span class="o">&gt;=</span> <span class="n">threshold</span> <span class="ow">and</span> <span class="p">(</span><span class="n">a_id</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">a_id</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">or</span> <span class="n">a_id</span> <span class="o">==</span> <span class="mi">22</span><span class="p">)</span> <span class="ow">and</span> <span class="n">n</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+                                <span class="n">free_neighs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+                                <span class="n">free_neighs_1d</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">ravel_multi_index</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">avail_lattice</span><span class="o">.</span><span class="n">shape</span><span class="p">))</span>
+
+
+            <span class="c1"># check if found any free neighbour</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">free_neighs</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">:</span>   
+                <span class="c1"># convert free neighbours to a numpy array</span>
+                <span class="n">free_neighs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">free_neighs</span><span class="p">)</span>
+                <span class="n">free_neighs_1d</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">free_neighs_1d</span><span class="p">)</span>
+
+                <span class="n">neigh_vals</span> <span class="o">=</span> <span class="p">[]</span>
+                <span class="c1"># retrieve agent preferences</span>
+                <span class="n">a_pref</span> <span class="o">=</span> <span class="n">agn_prefs</span><span class="p">[</span><span class="n">a_id</span><span class="p">]</span>
+                <span class="c1"># Neighbour Evaluation Loop</span>
+                <span class="k">for</span> <span class="n">neigh</span> <span class="ow">in</span> <span class="n">free_neighs</span><span class="p">:</span>
+
+                    <span class="n">neigh_value</span> <span class="o">=</span> <span class="mf">1.0</span>
+
+                    <span class="c1"># for every lattice in the environment informations</span>
+                    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">info_lattice</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">env_info</span><span class="p">):</span>
+                        <span class="k">if</span> <span class="p">(</span><span class="n">a_id</span> <span class="o">!=</span> <span class="n">i</span> <span class="ow">and</span> <span class="n">t</span> <span class="o">&lt;</span> <span class="n">threshold</span><span class="p">)</span> <span class="ow">or</span> <span class="n">t</span> <span class="o">&gt;</span> <span class="n">threshold</span><span class="p">:</span>
+                        <span class="c1"># Here we utilise Fuzzy Logics to be able to compare different layers </span>
+                        <span class="c1"># of environmental information and evaluate the voxel for the agent. </span>
+                        <span class="c1"># This method is introduced, and generalised in Pirouz Nourian dissertation: </span>
+                        <span class="c1"># section 5.7.3, pp. 201-208, eq. 57. You can refer to this section for </span>
+                        <span class="c1"># comprehensive mathematical details.</span>
+                            <span class="n">vox_val</span> <span class="o">=</span> <span class="n">info_lattice</span><span class="p">[</span><span class="nb">tuple</span><span class="p">(</span><span class="n">neigh</span><span class="p">)]</span>
+                            <span class="n">agn_vox_val</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">power</span><span class="p">(</span><span class="n">vox_val</span><span class="p">,</span> <span class="n">a_pref</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+                            <span class="n">neigh_value</span> <span class="o">*=</span> <span class="n">agn_vox_val</span>
+
+                    <span class="c1"># add the neighbour value to the list of values</span>
+                    <span class="n">neigh_vals</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">neigh_value</span><span class="p">)</span>
+
+                <span class="c1">#squareness weights added to specific functions</span>
+                <span class="k">if</span> <span class="n">a_id</span> <span class="ow">in</span> <span class="n">are_square</span><span class="p">:</span>
+                    <span class="n">uniq_neighs</span><span class="p">,</span> <span class="n">unique_to_norm_order</span><span class="p">,</span> <span class="n">unique_neighs_count</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">free_neighs_1d</span><span class="p">,</span> <span class="n">return_counts</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">return_inverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>   
+                    <span class="n">extra_weight</span> <span class="o">=</span> <span class="p">(</span><span class="n">unique_neighs_count</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="n">squareness_factor</span>
+
+                    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">neigh_vals</span><span class="p">)):</span>
+                        <span class="n">neigh_vals</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="n">extra_weight</span><span class="p">[</span><span class="n">unique_to_norm_order</span><span class="p">][</span><span class="n">i</span><span class="p">])</span>
+
+                <span class="c1"># convert to numpy array</span>
+                <span class="n">neigh_vals</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">neigh_vals</span><span class="p">)</span>
+
+                <span class="c1"># select the neighbour with highest value </span>
+                <span class="n">selected_int</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">neigh_vals</span><span class="p">)</span> 
+                <span class="c1"># find 3D intiger index of selected neighbour</span>
+                <span class="n">selected_neigh_3d_id</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">free_neighs</span><span class="p">[</span><span class="n">selected_int</span><span class="p">]</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
+
+                <span class="c1">#if the agent needs to have a maximum depth, it also should have a distance to other functions</span>
+                <span class="k">if</span> <span class="n">t</span> <span class="o">&gt;=</span> <span class="n">threshold</span> <span class="ow">and</span> <span class="p">(</span><span class="n">a_id</span> <span class="ow">in</span> <span class="n">have_max_depth</span><span class="p">):</span>
+                    <span class="n">keep_distance</span><span class="p">(</span><span class="n">a_id</span><span class="p">,</span> <span class="n">selected_neigh_3d_id</span><span class="p">,</span> <span class="n">keep_distance_lattice</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">avail_lattice</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+
+                <span class="c1"># find the location of the newly selected neighbour</span>
+                <span class="n">selected_neigh_loc</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">selected_neigh_3d_id</span><span class="p">)</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+
+                <span class="c1"># add the newly selected neighbour location to agent locations</span>
+                <span class="n">agn_locs</span><span class="p">[</span><span class="n">a_id</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">selected_neigh_loc</span><span class="p">)</span>
+
+                <span class="c1">#if the agents are walking, the previous agent must be deleted and that voxel must be made available</span>
+                <span class="k">if</span> <span class="n">t</span> <span class="o">&lt;</span> <span class="n">threshold</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">agn_locs</span><span class="p">[</span><span class="n">a_id</span><span class="p">])</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+                    <span class="n">temp</span> <span class="o">=</span> <span class="n">agn_locs</span><span class="p">[</span><span class="n">a_id</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+
+                    <span class="n">avail_lattice</span><span class="p">[</span><span class="nb">tuple</span><span class="p">(</span><span class="n">temp</span><span class="p">)]</span> <span class="o">=</span> <span class="kc">True</span>
+                    <span class="n">occ_lattice</span><span class="p">[</span><span class="nb">tuple</span><span class="p">(</span><span class="n">temp</span><span class="p">)]</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+                    <span class="k">del</span> <span class="n">agn_locs</span><span class="p">[</span><span class="n">a_id</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+
+                <span class="c1"># set the newly selected neighbour as UNavailable (0) in the availability lattice</span>
+                <span class="n">avail_lattice</span><span class="p">[</span><span class="n">selected_neigh_3d_id</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>
+
+                <span class="c1">#No voxels can grow above the hub</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">a_id</span> <span class="o">==</span> <span class="mi">2</span> <span class="ow">or</span> <span class="n">a_id</span> <span class="o">==</span> <span class="mi">18</span><span class="p">)</span> <span class="ow">and</span> <span class="n">t</span> <span class="o">&gt;=</span> <span class="n">threshold</span><span class="p">:</span>
+                    <span class="n">avail_lattice</span><span class="p">[</span><span class="n">selected_neigh_3d_id</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">selected_neigh_3d_id</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">2</span><span class="p">:]</span> <span class="o">=</span> <span class="kc">False</span>
+
+                <span class="c1"># set the newly selected neighbour as OCCUPIED by current agent </span>
+                <span class="c1"># (-1 means not-occupied so a_id)</span>
+                <span class="n">occ_lattice</span><span class="p">[</span><span class="n">selected_neigh_3d_id</span><span class="p">]</span> <span class="o">=</span> <span class="n">a_id</span>
+
+
+    <span class="c1"># constructing the new lattice</span>
+    <span class="n">new_occ_lattice</span> <span class="o">=</span> <span class="n">tg</span><span class="o">.</span><span class="n">to_lattice</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">occ_lattice</span><span class="p">),</span> <span class="n">occ_lattice</span><span class="p">)</span>
+
+    <span class="c1"># adding the new lattice to the list of frames</span>
+    <span class="n">frames</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">new_occ_lattice</span><span class="p">)</span>
+    <span class="c1"># adding one to the time counter</span>
+    <span class="n">t</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">if</span> <span class="n">t</span> <span class="o">&lt;</span> <span class="n">threshold</span><span class="p">:</span>
+        <span class="n">occ_lattice</span> <span class="o">=</span> <span class="n">avail_lattice</span> <span class="o">*</span> <span class="mi">0</span> <span class="o">-</span> <span class="mi">1</span>
+        <span class="n">update_closeness_mtrx</span><span class="p">()</span>
+</code></pre></div>
+
+
+
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="22-visualizing-the-simulation">2.2. Visualizing the simulation</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+
+<div class="codehilite"><pre><span></span><code><span class="n">pv</span><span class="o">.</span><span class="n">set_plot_theme</span><span class="p">(</span><span class="s2">&quot;document&quot;</span><span class="p">)</span>
+<span class="n">p</span> <span class="o">=</span> <span class="n">pv</span><span class="o">.</span><span class="n">Plotter</span><span class="p">(</span><span class="n">notebook</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">base_lattice</span> <span class="o">=</span> <span class="n">frames</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="c1"># Set the grid dimensions: shape + 1 because we want to inject our values on the CELL data</span>
+<span class="n">grid</span> <span class="o">=</span> <span class="n">pv</span><span class="o">.</span><span class="n">UniformGrid</span><span class="p">()</span>
+<span class="n">grid</span><span class="o">.</span><span class="n">dimensions</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">base_lattice</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="c1"># The bottom left corner of the data set</span>
+<span class="n">grid</span><span class="o">.</span><span class="n">origin</span> <span class="o">=</span> <span class="n">base_lattice</span><span class="o">.</span><span class="n">minbound</span> <span class="o">-</span> <span class="n">base_lattice</span><span class="o">.</span><span class="n">unit</span> <span class="o">*</span> <span class="mf">0.5</span>
+<span class="c1"># These are the cell sizes along each axis</span>
+<span class="n">grid</span><span class="o">.</span><span class="n">spacing</span> <span class="o">=</span> <span class="n">base_lattice</span><span class="o">.</span><span class="n">unit</span> 
+
+<span class="c1"># adding the boundingbox wireframe</span>
+<span class="n">p</span><span class="o">.</span><span class="n">add_mesh</span><span class="p">(</span><span class="n">grid</span><span class="o">.</span><span class="n">outline</span><span class="p">(),</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;grey&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Domain&quot;</span><span class="p">)</span>
+
+<span class="n">cmap</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">get_cmap</span><span class="p">(</span><span class="s2">&quot;viridis&quot;</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">create_mesh</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
+    <span class="n">f</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+    <span class="n">lattice</span> <span class="o">=</span> <span class="n">frames</span><span class="p">[</span><span class="n">f</span><span class="p">]</span>
+
+    <span class="c1"># Add the data values to the cell data</span>
+    <span class="n">grid</span><span class="o">.</span><span class="n">cell_arrays</span><span class="p">[</span><span class="s2">&quot;Agents&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">lattice</span><span class="o">.</span><span class="n">flatten</span><span class="p">(</span><span class="n">order</span><span class="o">=</span><span class="s2">&quot;F&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>  <span class="c1"># Flatten the array!</span>
+    <span class="c1"># filtering the voxels</span>
+    <span class="n">threshed</span> <span class="o">=</span> <span class="n">grid</span><span class="o">.</span><span class="n">threshold</span><span class="p">([</span><span class="o">-</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">agn_num</span> <span class="o">-</span> <span class="mf">0.9</span><span class="p">])</span>
+    <span class="c1"># adding the voxels</span>
+    <span class="n">p</span><span class="o">.</span><span class="n">add_mesh</span><span class="p">(</span><span class="n">threshed</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;sphere&#39;</span><span class="p">,</span> <span class="n">show_edges</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">show_scalar_bar</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="k">return</span>
+
+<span class="n">p</span><span class="o">.</span><span class="n">add_slider_widget</span><span class="p">(</span><span class="n">create_mesh</span><span class="p">,</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">n_frames</span><span class="p">],</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Time&#39;</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">event_type</span><span class="o">=</span><span class="s2">&quot;always&quot;</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;classic&quot;</span><span class="p">,</span> <span class="n">pointa</span><span class="o">=</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">),</span> <span class="n">pointb</span><span class="o">=</span><span class="p">(</span><span class="mf">0.9</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">))</span>
+
+<span class="n">p</span><span class="o">.</span><span class="n">window_size</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">,</span> <span class="mi">1000</span>
+
+<span class="c1"># for i in range(171):</span>
+<span class="c1">#     create_mesh(i * 10)</span>
+<span class="c1">#     p.screenshot(&quot;growth_&quot; + str(i * 10))</span>
+
+<span class="n">p</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">use_ipyvtk</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</code></pre></div>
+
+
+
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="23-saving-lattice-frames-in-csv">2.3. Saving lattice frames in CSV</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+
+<div class="codehilite"><pre><span></span><code><span class="n">lattice</span> <span class="o">=</span> <span class="n">frames</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">csv_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">relpath</span><span class="p">(</span><span class="s1">&#39;../data/324/growth_output.csv&#39;</span><span class="p">)</span>
+<span class="n">lattice</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">csv_path</span><span class="p">)</span>
+</code></pre></div>
+
+
+
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="shafts-and-corridors">Shafts and Corridors</h1>
+<h3 id="31-stencil-creation">3.1. stencil creation</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+
+<div class="codehilite"><pre><span></span><code><span class="c1"># creating neighborhood definition</span>
+<span class="n">stencil_flat</span> <span class="o">=</span> <span class="n">tg</span><span class="o">.</span><span class="n">create_stencil</span><span class="p">(</span><span class="s2">&quot;von_neumann&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="c1"># setting the center to zero</span>
+<span class="n">stencil_flat</span><span class="o">.</span><span class="n">set_index</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">stencil_flat</span><span class="o">.</span><span class="n">set_index</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">stencil_flat</span><span class="o">.</span><span class="n">set_index</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="mi">0</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">stencil_flat</span><span class="p">)</span>
+</code></pre></div>
+
+
+
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+
+<div class="codehilite"><pre><span></span><code><span class="n">avail_index_bool</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">((</span><span class="n">frames</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span> <span class="c1"># making a new availability boolean lattice</span>
+
+<span class="c1"># ignoring some functions that do not need a shaft to be grown inside (park for instance)</span>
+<span class="n">avail_index_bool</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">frames</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)]</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">avail_index_bool</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">frames</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="mi">13</span><span class="p">)]</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">avail_index_bool</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">frames</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="mi">14</span><span class="p">)]</span> <span class="o">=</span> <span class="kc">False</span>
+
+<span class="c1">#lattice creation</span>
+<span class="n">avail_lattice_bool</span> <span class="o">=</span> <span class="n">tg</span><span class="o">.</span><span class="n">to_lattice</span><span class="p">(</span><span class="n">avail_index_bool</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">avail_lattice</span><span class="o">.</span><span class="n">shape</span><span class="p">),</span><span class="n">avail_lattice</span><span class="p">)</span>
+</code></pre></div>
+
+
+
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="32-visualize-the-lattice-for-shaft-and-corridor-growth">3.2. Visualize the lattice for shaft and corridor growth</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+
+<div class="codehilite"><pre><span></span><code><span class="c1"># convert mesh to pv_mesh</span>
+<span class="k">def</span> <span class="nf">tri_to_pv</span><span class="p">(</span><span class="n">tri_mesh</span><span class="p">):</span>
+    <span class="n">faces</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">pad</span><span class="p">(</span><span class="n">tri_mesh</span><span class="o">.</span><span class="n">faces</span><span class="p">,</span> <span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">)),</span> <span class="s1">&#39;constant&#39;</span><span class="p">,</span> <span class="n">constant_values</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+    <span class="n">pv_mesh</span> <span class="o">=</span> <span class="n">pv</span><span class="o">.</span><span class="n">PolyData</span><span class="p">(</span><span class="n">tri_mesh</span><span class="o">.</span><span class="n">vertices</span><span class="p">,</span> <span class="n">faces</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">pv_mesh</span>
+
+<span class="c1"># Visualize the mesh using pyvista plotter</span>
+
+<span class="c1"># initiating the plotter</span>
+<span class="n">p</span> <span class="o">=</span> <span class="n">pv</span><span class="o">.</span><span class="n">Plotter</span><span class="p">(</span><span class="n">notebook</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># fast visualization of the lattice</span>
+<span class="n">avail_lattice_bool</span><span class="o">.</span><span class="n">fast_vis</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+
+<span class="c1"># plotting</span>
+<span class="n">p</span><span class="o">.</span><span class="n">window_size</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">,</span> <span class="mi">1000</span>
+<span class="c1"># p.screenshot(&quot;corridors_1&quot;)    </span>
+<span class="n">p</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">use_ipyvtk</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</code></pre></div>
+
+
+
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="41-calculating-cluster-centers-for-each-agent-based-on-agent-size">4.1. calculating cluster centers for each agent, based on agent size</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+
+<div class="codehilite"><pre><span></span><code><span class="n">cluster_centers</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">func_id</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">frames</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">func_id</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">20</span><span class="p">]:</span> <span class="c1">#again not caring about specific functions, such as the garden</span>
+        <span class="n">function_locs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">frames</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="n">func_id</span><span class="p">))</span><span class="o">.</span><span class="n">T</span>
+
+        <span class="c1"># for every multiple of 100 voxels a cluster center is created and at least 1 per agent</span>
+        <span class="n">nclusters</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">function_locs</span><span class="p">)</span> <span class="o">/</span> <span class="mi">100</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="n">kmeans_model</span> <span class="o">=</span> <span class="n">KMeans</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span> <span class="n">nclusters</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">function_locs</span><span class="p">)</span>
+        <span class="n">cluster_centers</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">kmeans_model</span><span class="o">.</span><span class="n">cluster_centers_</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int8</span><span class="p">))</span>
+
+<span class="c1"># making shure it&#39;s no longer a nested cluster center list</span>
+<span class="n">cluster_center_list</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">cluster_centers</span><span class="p">)):</span>
+    <span class="n">cluster_center_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cluster_centers</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
+</code></pre></div>
+
+
+
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+
+<div class="codehilite"><pre><span></span><code><span class="c1">#creating a lattice that shows all cluster centers</span>
+<span class="n">cluster_center_lattice</span> <span class="o">=</span> <span class="n">avail_lattice_bool</span> <span class="o">*</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">cluster_center</span> <span class="ow">in</span> <span class="n">cluster_center_list</span><span class="p">:</span>
+    <span class="n">cluster_center_lattice</span><span class="p">[</span><span class="n">cluster_center</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">cluster_center</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">cluster_center</span><span class="p">[</span><span class="mi">2</span><span class="p">]]</span> <span class="o">=</span> <span class="mi">1</span>
+</code></pre></div>
+
+
+
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="42-visualizing-the-cluster-centers">4.2. Visualizing the cluster centers</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+
+<div class="codehilite"><pre><span></span><code><span class="n">p</span> <span class="o">=</span> <span class="n">pv</span><span class="o">.</span><span class="n">Plotter</span><span class="p">(</span><span class="n">notebook</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">base_lattice</span> <span class="o">=</span> <span class="n">cluster_center_lattice</span>
+
+<span class="c1"># Set the grid dimensions: shape + 1 because we want to inject our values on the CELL data</span>
+<span class="n">grid</span> <span class="o">=</span> <span class="n">pv</span><span class="o">.</span><span class="n">UniformGrid</span><span class="p">()</span>
+<span class="n">grid</span><span class="o">.</span><span class="n">dimensions</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">base_lattice</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="c1"># The bottom left corner of the data set</span>
+<span class="n">grid</span><span class="o">.</span><span class="n">origin</span> <span class="o">=</span> <span class="n">base_lattice</span><span class="o">.</span><span class="n">minbound</span> <span class="o">-</span> <span class="n">base_lattice</span><span class="o">.</span><span class="n">unit</span> <span class="o">*</span> <span class="mf">0.5</span>
+<span class="c1"># These are the cell sizes along each axis</span>
+<span class="n">grid</span><span class="o">.</span><span class="n">spacing</span> <span class="o">=</span> <span class="n">base_lattice</span><span class="o">.</span><span class="n">unit</span> 
+
+<span class="c1"># adding the boundingbox wireframe</span>
+<span class="n">p</span><span class="o">.</span><span class="n">add_mesh</span><span class="p">(</span><span class="n">grid</span><span class="o">.</span><span class="n">outline</span><span class="p">(),</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;grey&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Domain&quot;</span><span class="p">)</span>
+
+<span class="c1"># adding the avilability lattice</span>
+<span class="n">avail_lattice_bool</span><span class="o">.</span><span class="n">fast_vis</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+
+<span class="c1"># Add the data values to the cell data</span>
+<span class="n">grid</span><span class="o">.</span><span class="n">cell_arrays</span><span class="p">[</span><span class="s2">&quot;Agents&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">base_lattice</span><span class="o">.</span><span class="n">flatten</span><span class="p">(</span><span class="n">order</span><span class="o">=</span><span class="s2">&quot;F&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>  <span class="c1"># Flatten the array!</span>
+<span class="c1"># filtering the voxels</span>
+<span class="n">threshed</span> <span class="o">=</span> <span class="n">grid</span><span class="o">.</span><span class="n">threshold</span><span class="p">([</span><span class="mf">0.9</span><span class="p">,</span> <span class="mf">1.1</span><span class="p">])</span>
+<span class="c1"># adding the voxels</span>
+<span class="n">p</span><span class="o">.</span><span class="n">add_mesh</span><span class="p">(</span><span class="n">threshed</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;sphere&#39;</span><span class="p">,</span> <span class="n">show_edges</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">show_scalar_bar</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
+
+<span class="n">p</span><span class="o">.</span><span class="n">window_size</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">,</span> <span class="mi">1000</span>
+<span class="c1"># p.screenshot(&quot;corridors_2&quot;)    </span>
+<span class="n">p</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">use_ipyvtk</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</code></pre></div>
+
+
+
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="43-calculating-2d-shaft-placement">4.3. Calculating 2D shaft placement</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+
+<div class="codehilite"><pre><span></span><code><span class="n">kmeans_model</span> <span class="o">=</span> <span class="n">KMeans</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">cluster_center_list</span><span class="p">)</span> <span class="c1"># select how many shafts</span>
+<span class="n">cluster_centers_total</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">kmeans_model</span><span class="o">.</span><span class="n">cluster_centers_</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int8</span><span class="p">)</span>
+
+<span class="c1"># init shaft lattice</span>
+<span class="n">shft_lattice</span> <span class="o">=</span> <span class="n">avail_lattice_bool</span> <span class="o">*</span> <span class="mi">0</span>
+<span class="c1"># setting the shafts to 1</span>
+<span class="k">for</span> <span class="n">cl_cen</span> <span class="ow">in</span> <span class="n">cluster_centers_total</span><span class="p">:</span>
+    <span class="n">shft_lattice</span><span class="p">[</span><span class="n">cl_cen</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">cl_cen</span><span class="p">[</span><span class="mi">1</span><span class="p">],:]</span> <span class="o">=</span> <span class="mi">1</span>
+</code></pre></div>
+
+
+
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="44-visualizing-the-shaft-lattice">4.4. Visualizing the shaft lattice</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+
+<div class="codehilite"><pre><span></span><code><span class="n">p</span> <span class="o">=</span> <span class="n">pv</span><span class="o">.</span><span class="n">Plotter</span><span class="p">(</span><span class="n">notebook</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">base_lattice</span> <span class="o">=</span> <span class="n">shft_lattice</span> <span class="o">*</span> <span class="n">avail_lattice_bool</span>
+
+<span class="c1"># Set the grid dimensions: shape + 1 because we want to inject our values on the CELL data</span>
+<span class="n">grid</span> <span class="o">=</span> <span class="n">pv</span><span class="o">.</span><span class="n">UniformGrid</span><span class="p">()</span>
+<span class="n">grid</span><span class="o">.</span><span class="n">dimensions</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">base_lattice</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="c1"># The bottom left corner of the data set</span>
+<span class="n">grid</span><span class="o">.</span><span class="n">origin</span> <span class="o">=</span> <span class="n">base_lattice</span><span class="o">.</span><span class="n">minbound</span> <span class="o">-</span> <span class="n">base_lattice</span><span class="o">.</span><span class="n">unit</span> <span class="o">*</span> <span class="mf">0.5</span>
+<span class="c1"># These are the cell sizes along each axis</span>
+<span class="n">grid</span><span class="o">.</span><span class="n">spacing</span> <span class="o">=</span> <span class="n">base_lattice</span><span class="o">.</span><span class="n">unit</span> 
+
+<span class="c1"># adding the boundingbox wireframe</span>
+<span class="n">p</span><span class="o">.</span><span class="n">add_mesh</span><span class="p">(</span><span class="n">grid</span><span class="o">.</span><span class="n">outline</span><span class="p">(),</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;grey&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Domain&quot;</span><span class="p">)</span>
+
+<span class="c1"># adding the avilability lattice</span>
+<span class="n">avail_lattice_bool</span><span class="o">.</span><span class="n">fast_vis</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+
+<span class="c1"># Add the data values to the cell data</span>
+<span class="n">grid</span><span class="o">.</span><span class="n">cell_arrays</span><span class="p">[</span><span class="s2">&quot;Agents&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">base_lattice</span><span class="o">.</span><span class="n">flatten</span><span class="p">(</span><span class="n">order</span><span class="o">=</span><span class="s2">&quot;F&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>  <span class="c1"># Flatten the array!</span>
+<span class="c1"># filtering the voxels</span>
+<span class="n">threshed</span> <span class="o">=</span> <span class="n">grid</span><span class="o">.</span><span class="n">threshold</span><span class="p">([</span><span class="mf">0.9</span><span class="p">,</span> <span class="mf">1.1</span><span class="p">])</span>
+<span class="c1"># adding the voxels</span>
+<span class="n">p</span><span class="o">.</span><span class="n">add_mesh</span><span class="p">(</span><span class="n">threshed</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;sphere&#39;</span><span class="p">,</span> <span class="n">show_edges</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">show_scalar_bar</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="n">p</span><span class="o">.</span><span class="n">window_size</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">,</span> <span class="mi">1000</span>
+<span class="c1"># p.screenshot(&quot;corridors_3&quot;)    </span>
+<span class="n">p</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">use_ipyvtk</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</code></pre></div>
+
+
+
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="51-adjacency-matrix-creation">5.1. Adjacency matrix creation</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+
+<div class="codehilite"><pre><span></span><code><span class="n">avail_lattice_flat</span> <span class="o">=</span> <span class="n">avail_lattice_bool</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+
+<span class="c1"># find the number of all voxels</span>
+<span class="n">vox_count</span> <span class="o">=</span> <span class="n">avail_lattice_bool</span><span class="o">.</span><span class="n">size</span> 
+
+<span class="c1"># initialize the adjacency matrix</span>
+<span class="n">adj_list</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="c1"># Finding the index of the available voxels in avail_lattice</span>
+<span class="n">avail_index</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">avail_lattice_bool</span> <span class="o">==</span> <span class="mi">1</span><span class="p">))</span><span class="o">.</span><span class="n">T</span>
+
+<span class="c1"># fill the adjacency matrix using the list of all neighbours</span>
+<span class="k">for</span> <span class="n">vox_loc</span> <span class="ow">in</span> <span class="n">avail_index</span><span class="p">:</span>
+    <span class="c1"># find the 1D id</span>
+    <span class="n">vox_id</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ravel_multi_index</span><span class="p">(</span><span class="n">vox_loc</span><span class="p">,</span> <span class="n">avail_lattice_bool</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+
+    <span class="c1"># retrieve the list of neighbours of the voxel based on the stencil</span>
+    <span class="n">vox_neighs</span> <span class="o">=</span> <span class="n">init_avail_lattice</span><span class="o">.</span><span class="n">find_neighbours_masked</span><span class="p">(</span><span class="n">stencil</span><span class="p">,</span> <span class="n">loc</span> <span class="o">=</span> <span class="n">vox_loc</span><span class="p">)</span>
+
+   <span class="c1"># iterating over the neighbours</span>
+    <span class="k">for</span> <span class="n">neigh</span> <span class="ow">in</span> <span class="n">vox_neighs</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">avail_lattice_flat</span><span class="p">[</span><span class="n">neigh</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">adj_list</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">vox_id</span><span class="p">,</span> <span class="n">neigh</span><span class="p">])</span>
+
+<span class="c1">#list to array</span>
+<span class="n">adj_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">adj_list</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
+
+<span class="c1">#array to sparce matrix</span>
+<span class="n">adj_matrix_sparse</span> <span class="o">=</span>  <span class="n">csr_matrix</span><span class="p">((</span><span class="n">adj_array</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="p">(</span><span class="n">adj_array</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">adj_array</span><span class="p">[</span><span class="mi">2</span><span class="p">])),</span> <span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="n">vox_count</span><span class="p">,</span><span class="n">vox_count</span><span class="p">))</span>
+
+<span class="c1">#sparce matrix to nx connectivity graph</span>
+<span class="n">g</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">from_scipy_sparse_matrix</span><span class="p">(</span><span class="n">adj_matrix_sparse</span><span class="p">)</span>
+</code></pre></div>
+
+
+
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="52-corridor-growth">5.2. Corridor growth</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+
+<div class="codehilite"><pre><span></span><code><span class="n">occ_ind</span> <span class="o">=</span> <span class="n">cluster_center_list</span>
+
+<span class="c1"># initialize corridor lattice</span>
+<span class="n">cor_lattice</span> <span class="o">=</span> <span class="n">shft_lattice</span> <span class="o">*</span> <span class="mi">0</span>
+<span class="n">cor_flat</span> <span class="o">=</span> <span class="n">cor_lattice</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+<span class="c1"># for each voxel that needs to have access to shafts</span>
+<span class="k">for</span> <span class="n">a_vox</span> <span class="ow">in</span> <span class="n">occ_ind</span><span class="p">:</span>
+
+    <span class="c1"># slice the corridor lattice horizontally</span>
+    <span class="n">cor_floor</span> <span class="o">=</span> <span class="n">shft_lattice</span><span class="p">[:,:,</span><span class="n">a_vox</span><span class="p">[</span><span class="mi">2</span><span class="p">]]</span>
+    <span class="c1"># find the vertical shaft voxel indices</span>
+    <span class="n">shaft_vox_inds</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">cor_floor</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">))</span><span class="o">.</span><span class="n">T</span>
+    <span class="n">paths</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">path_lens</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">shft_ind</span> <span class="ow">in</span> <span class="n">shaft_vox_inds</span><span class="p">:</span>
+        <span class="c1"># construct the destination address</span>
+        <span class="n">dst_vox</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">shft_ind</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">shft_ind</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">a_vox</span><span class="p">[</span><span class="mi">2</span><span class="p">]])</span>
+        <span class="c1"># construct 1-dimensional indices</span>
+        <span class="n">src_ind</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ravel_multi_index</span><span class="p">(</span><span class="n">a_vox</span><span class="p">,</span> <span class="n">shft_lattice</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+        <span class="n">dst_ind</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ravel_multi_index</span><span class="p">(</span><span class="n">dst_vox</span><span class="p">,</span> <span class="n">shft_lattice</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>        
+        <span class="c1"># find the shortest path</span>
+        <span class="k">if</span> <span class="n">nx</span><span class="o">.</span><span class="n">algorithms</span><span class="o">.</span><span class="n">shortest_paths</span><span class="o">.</span><span class="n">generic</span><span class="o">.</span><span class="n">has_path</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="n">src_ind</span><span class="p">,</span> <span class="n">dst_ind</span><span class="p">):</span>
+            <span class="n">path</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">algorithms</span><span class="o">.</span><span class="n">shortest_paths</span><span class="o">.</span><span class="n">astar</span><span class="o">.</span><span class="n">astar_path</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="n">src_ind</span><span class="p">,</span> <span class="n">dst_ind</span><span class="p">)</span>
+            <span class="n">paths</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+            <span class="n">path_lens</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">path</span><span class="p">))</span>
+
+    <span class="c1"># find the number of shortest path</span>
+    <span class="k">for</span> <span class="n">shortest_path_index</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">path_lens</span><span class="p">)</span><span class="o">.</span><span class="n">argsort</span><span class="p">()[:</span><span class="mi">1</span><span class="p">]:</span> <span class="c1">#select how many paths to connect to closest shafts</span>
+        <span class="n">cor_flat</span><span class="p">[</span><span class="n">paths</span><span class="p">[</span><span class="n">shortest_path_index</span><span class="p">]]</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="c1">#set the floor level the shafts need to be connected</span>
+<span class="n">connected_floor_levels</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">level</span> <span class="ow">in</span> <span class="n">connected_floor_levels</span><span class="p">:</span>
+    <span class="n">cur_floor_level</span> <span class="o">=</span> <span class="n">shft_lattice</span><span class="p">[:,:,</span><span class="n">level</span><span class="p">]</span> <span class="c1">#finding floor level</span>
+    <span class="n">shaft_vox_inds</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">cur_floor_level</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">))</span><span class="o">.</span><span class="n">T</span> <span class="c1">#finding shafts</span>
+    <span class="n">dst_ind_list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">source_ind_list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">shft_ind</span> <span class="ow">in</span> <span class="n">shaft_vox_inds</span><span class="p">:</span>
+        <span class="c1"># construct the destination address</span>
+        <span class="n">dst_vox</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">shft_ind</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">shft_ind</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">level</span><span class="p">])</span>
+        <span class="n">index</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ravel_multi_index</span><span class="p">(</span><span class="n">dst_vox</span><span class="p">,</span> <span class="n">shft_lattice</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span> <span class="c1">#finding the 1D index</span>
+        <span class="c1">#setting the indices as both src and dst</span>
+        <span class="n">dst_ind_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">index</span><span class="p">)</span> 
+        <span class="n">source_ind_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">index</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">dst_ind</span> <span class="ow">in</span> <span class="n">dst_ind_list</span><span class="p">:</span>
+        <span class="n">paths</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">path_lens</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">source_ind</span> <span class="ow">in</span> <span class="n">source_ind_list</span><span class="p">:</span> <span class="c1">#checking if path to itself</span>
+            <span class="k">if</span> <span class="n">dst_ind</span> <span class="o">==</span> <span class="n">source_ind</span><span class="p">:</span>
+                <span class="k">continue</span>
+            <span class="k">if</span> <span class="n">nx</span><span class="o">.</span><span class="n">algorithms</span><span class="o">.</span><span class="n">shortest_paths</span><span class="o">.</span><span class="n">generic</span><span class="o">.</span><span class="n">has_path</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="n">source_ind</span><span class="p">,</span> <span class="n">dst_ind</span><span class="p">):</span>
+                <span class="n">path</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">algorithms</span><span class="o">.</span><span class="n">shortest_paths</span><span class="o">.</span><span class="n">astar</span><span class="o">.</span><span class="n">astar_path</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="n">source_ind</span><span class="p">,</span> <span class="n">dst_ind</span><span class="p">)</span> <span class="c1">#finding the closest paths</span>
+                <span class="n">paths</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+                <span class="n">path_lens</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">path</span><span class="p">))</span>
+
+        <span class="c1"># find the 2 shortest paths</span>
+        <span class="k">for</span> <span class="n">shortest_path_index</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">path_lens</span><span class="p">)</span><span class="o">.</span><span class="n">argsort</span><span class="p">()[:</span><span class="mi">2</span><span class="p">]:</span> <span class="c1"># selecting how many paths to connect to closests shafts</span>
+            <span class="n">cor_flat</span><span class="p">[</span><span class="n">paths</span><span class="p">[</span><span class="n">shortest_path_index</span><span class="p">]]</span> <span class="o">=</span> <span class="mi">1</span>       
+
+<span class="c1"># reshape the flat lattice</span>
+<span class="n">cor_lattice</span> <span class="o">=</span> <span class="n">cor_flat</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">cor_lattice</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</code></pre></div>
+
+
+
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="53-vizualizing-the-shafts-and-corridors-lattice">5.3. Vizualizing the shafts and  corridors lattice</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+
+<div class="codehilite"><pre><span></span><code><span class="n">p</span> <span class="o">=</span> <span class="n">pv</span><span class="o">.</span><span class="n">Plotter</span><span class="p">(</span><span class="n">notebook</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">base_lattice</span> <span class="o">=</span> <span class="p">(</span><span class="n">shft_lattice</span> <span class="o">+</span> <span class="n">cor_lattice</span><span class="p">)</span> <span class="o">*</span> <span class="n">avail_lattice_bool</span>
+
+<span class="c1"># Set the grid dimensions: shape + 1 because we want to inject our values on the CELL data</span>
+<span class="n">grid</span> <span class="o">=</span> <span class="n">pv</span><span class="o">.</span><span class="n">UniformGrid</span><span class="p">()</span>
+<span class="n">grid</span><span class="o">.</span><span class="n">dimensions</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">base_lattice</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="c1"># The bottom left corner of the data set</span>
+<span class="n">grid</span><span class="o">.</span><span class="n">origin</span> <span class="o">=</span> <span class="n">base_lattice</span><span class="o">.</span><span class="n">minbound</span> <span class="o">-</span> <span class="n">base_lattice</span><span class="o">.</span><span class="n">unit</span> <span class="o">*</span> <span class="mf">0.5</span>
+<span class="c1"># These are the cell sizes along each axis</span>
+<span class="n">grid</span><span class="o">.</span><span class="n">spacing</span> <span class="o">=</span> <span class="n">base_lattice</span><span class="o">.</span><span class="n">unit</span> 
+
+<span class="c1"># adding the boundingbox wireframe</span>
+<span class="n">p</span><span class="o">.</span><span class="n">add_mesh</span><span class="p">(</span><span class="n">grid</span><span class="o">.</span><span class="n">outline</span><span class="p">(),</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;grey&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Domain&quot;</span><span class="p">)</span>
+
+<span class="c1"># adding the avilability lattice</span>
+<span class="n">avail_lattice_bool</span><span class="o">.</span><span class="n">fast_vis</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+
+<span class="c1"># Add the data values to the cell data</span>
+<span class="n">grid</span><span class="o">.</span><span class="n">cell_arrays</span><span class="p">[</span><span class="s2">&quot;Agents&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">base_lattice</span><span class="o">.</span><span class="n">flatten</span><span class="p">(</span><span class="n">order</span><span class="o">=</span><span class="s2">&quot;F&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>  <span class="c1"># Flatten the array!</span>
+<span class="c1"># filtering the voxels</span>
+<span class="n">threshed</span> <span class="o">=</span> <span class="n">grid</span><span class="o">.</span><span class="n">threshold</span><span class="p">([</span><span class="mf">0.9</span><span class="p">,</span> <span class="mf">2.1</span><span class="p">])</span>
+<span class="c1"># adding the voxels</span>
+<span class="n">p</span><span class="o">.</span><span class="n">add_mesh</span><span class="p">(</span><span class="n">threshed</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;sphere&#39;</span><span class="p">,</span> <span class="n">show_edges</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">show_scalar_bar</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="n">p</span><span class="o">.</span><span class="n">window_size</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">,</span> <span class="mi">1000</span>
+<span class="n">p</span><span class="o">.</span><span class="n">screenshot</span><span class="p">(</span><span class="s2">&quot;corridors_4&quot;</span><span class="p">)</span>    
+<span class="n">p</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">use_ipyvtk</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</code></pre></div>
+
+
+
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="61-setting-the-shafts-as-1-and-corridors-as-2-for-export">6.1. Setting the shafts as 1 and corridors as 2 for export</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+
+<div class="codehilite"><pre><span></span><code><span class="n">shafts_and_corridors_lattice</span> <span class="o">=</span> <span class="n">avail_lattice_bool</span> <span class="o">*</span> <span class="mi">0</span>
+<span class="n">shafts_and_corridors_lattice</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">cor_lattice</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)]</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">shafts_and_corridors_lattice</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">shft_lattice</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)]</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">shafts_and_corridors_lattice</span> <span class="o">*=</span> <span class="n">avail_lattice_bool</span>
+</code></pre></div>
+
+
+
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="62-exporting-the-lattices">6.2. Exporting the lattices</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+
+<div class="codehilite"><pre><span></span><code><span class="n">csv_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">relpath</span><span class="p">(</span><span class="s1">&#39;../data/324/shafts_and_corridors_lattice.csv&#39;</span><span class="p">)</span>
+<span class="n">shafts_and_corridors_lattice</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">csv_path</span><span class="p">)</span>
+
+<span class="n">csv_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">relpath</span><span class="p">(</span><span class="s1">&#39;../data/324/avail_lattice_bool.csv&#39;</span><span class="p">)</span>
+<span class="n">avail_lattice_bool</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">csv_path</span><span class="p">)</span>
+</code></pre></div>
+
+
+
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="credits">Credits</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+
+<div class="codehilite"><pre><span></span><code><span class="n">__author__</span> <span class="o">=</span> <span class="s2">&quot;Shervin Azadi and Pirouz Nourian&quot;</span>
+<span class="n">__license__</span> <span class="o">=</span> <span class="s2">&quot;MIT&quot;</span>
+<span class="n">__version__</span> <span class="o">=</span> <span class="s2">&quot;1.0&quot;</span>
+<span class="n">__url__</span> <span class="o">=</span> <span class="s2">&quot;https://github.com/shervinazadi/spatial_computing_workshops&quot;</span>
+<span class="n">__summary__</span> <span class="o">=</span> <span class="s2">&quot;Spatial Computing Design Studio Workshop on MCDA and Path Finding for Generative Spatial Relations&quot;</span>
+</code></pre></div>
+
+
+
+</div>
+</div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.7e0ee788.min.js"></script>
+      <script src="../../assets/javascripts/bundle.b3a72adc.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

@@ -279,8 +279,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#computation-flowchart" class="md-nav__link">
-    Computation Flowchart
+  <a href="#computation-overview-flowchart" class="md-nav__link">
+    Computation Overview Flowchart
   </a>
   
 </li>
@@ -482,6 +482,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../a5_reflection/" class="md-nav__link">
+      Reflection
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
     <a href="../about/" class="md-nav__link">
       About
     </a>
@@ -495,13 +507,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" >
-    <label class="md-nav__link" for="nav-7">
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8" >
+    <label class="md-nav__link" for="nav-8">
       Index
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Index" data-md-level="1">
-      <label class="md-nav__title" for="nav-7">
+      <label class="md-nav__title" for="nav-8">
         <span class="md-nav__icon md-icon"></span>
         Index
       </label>
@@ -568,13 +580,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8" >
-    <label class="md-nav__link" for="nav-8">
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9" >
+    <label class="md-nav__link" for="nav-9">
       Notebooks
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Notebooks" data-md-level="1">
-      <label class="md-nav__title" for="nav-8">
+      <label class="md-nav__title" for="nav-9">
         <span class="md-nav__icon md-icon"></span>
         Notebooks
       </label>
@@ -589,67 +601,6 @@
   <li class="md-nav__item">
     <a href="../Notebooks/solar_studies/" class="md-nav__link">
       Solar notebook
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9" >
-    <label class="md-nav__link" for="nav-9">
-      Documenting (TBR)
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="Documenting (TBR)" data-md-level="1">
-      <label class="md-nav__title" for="nav-9">
-        <span class="md-nav__icon md-icon"></span>
-        Documenting (TBR)
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../documenting/instructions/" class="md-nav__link">
-      Instructions
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../documenting/folder_structure/" class="md-nav__link">
-      Folder Structure
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../documenting/guidelines/" class="md-nav__link">
-      Guidelines
     </a>
   </li>
 
@@ -711,8 +662,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#computation-flowchart" class="md-nav__link">
-    Computation Flowchart
+  <a href="#computation-overview-flowchart" class="md-nav__link">
+    Computation Overview Flowchart
   </a>
   
 </li>
@@ -805,19 +756,25 @@
 qualities.</p>
 <p><img alt="REL" src="../img/REL v2.png" /></p>
 <h4 id="weights-and-preferences-hierarchy">Weights and preferences hierarchy</h4>
-<p><u>Growth hierarchy</u> 
-<br>According to our design strategy with privacy gradients and the decision
-to cluster functions around hubs, a hierachy of spaces arises. When the
-growth algorithm seeds and grows spaces, the matrix is used to look up
-which spaces should grow or “follow” which spaces. However, not every
-space finds it important to follow another. Some spaces are dependant on
-the location of the hubs but the hubs themselves are not affected by the
-spaces following them. This relationship indicated in the matrix by lack
-of symmetry across the diagonal.</p>
-<p>The following bubble diagram illustrates the meaning of this assymetry along the diagonal in the REL chart. For example, co-cooking area and community garden are connected in the metro diagram , this is also reflected in the REL chart. However, because the co-cooking area indicates that it would need to grow toards the garden, and garden does not iindicate any preference for growing towards the co-cooking, a hieracy arises : co-cokking follows garden, not the other way around.</p>
+<p><a href="../pdf/hierarchy.pdf">Growth hierarchy</a>
+<a href="../pdf/hierarchy.pdf" class="image fit"><img src="images/marr_pic.jpg" alt=""></a>
+<br>According to our design strategy with privacy gradients and the
+decision to cluster functions around hubs, a hierarchy of spaces
+arises. When the growth algorithm seeds and grows spaces, the
+matrix is used to look up which spaces should grow or “follow”
+which spaces. However, not every space finds it important to
+follow another. Some spaces are dependant on the location of
+the hubs but the hubs themselves are not affected by the spaces
+following them. This relationship indicated in the matrix by lack
+of symmetry across the diagonal. </p>
+<p>The following bubble diagram illustrates the meaning of this
+asymmetry along the diagonal in the REL chart. For example,
+the co-cooking area and community garden are connected in
+the metro diagram, this is also reflected in the REL chart. However, because the co-cooking area indicates that it would need
+to grow towards the garden, and the garden does not indicate
+any preference for growing towards the co-cooking, a hierarchy
+arises: co-cooking follows the garden, not the other way around.</p>
 <p><img alt="Hierarchy" src="../img/hierarchy.png" /></p>
-<p><a href="../img/hierarchy.png">Hierarchy</a>
-<a href="../pdf/hierarchy.pdf" class="image fit"><img src="images/marr_pic.jpg" alt=""></a></p>
 <h4 id="voxel-size">Voxel size</h4>
 <p>Having set design goals and user perspectives, we chose a voxel size that we consider multifunctional enough to form
 spaces with different functions. This voxel size became a base for the voxel cloud used in all following computations.</p>
@@ -842,14 +799,13 @@ spaces with different functions. This voxel size became a base for the voxel clo
 </ul>
 <p><img src="../img/stair_dimensions.PNG" width="300"> 
 <img src="../img/stairs_3D.PNG" width="300"> </p>
-<h4 id="notebook-flowchart">Notebook Flowchart</h4>
+<h4 id="notebook-flowchart"><a href="../pdf/flowchart_notebooks.pdf">Notebook Flowchart</a></h4>
 <p>The computation process is reflected in the flowchart. </p>
 <p>For optimization purposes, we used 3 lattices with different voxel sizes. The resulting data was always interpolated for
 our main lattice with voxel size 3240x3240.</p>
-<p><img alt="Flowchart_notebooks" src="../img/Flowchart_notebooks.png" /></p>
-<p><a href="../img/Flowchart_notebooks.png">Flowchart_notebooks</a>
-<a href="../pdf/flowchart_notebooks.pdf" class="image fit"><img src="images/marr_pic.jpg" alt=""></a></p>
-<h4 id="computation-flowchart">Computation Flowchart</h4>
+<p><img alt="Notebook Flowchart" src="../img/Flowchart_notebooks.png" /></p>
+<h4 id="computation-overview-flowchart"><a href="../pdf/Process flowchart_final.pdf">Computation Overview Flowchart</a></h4>
+<p><img alt="Computation Flowchart" src="../img/Process_flowchart.PNG" /></p>
 <h3 id="static-data-creation">Static data creation</h3>
 <h4 id="solar-envelope">Solar envelope</h4>
 <blockquote>

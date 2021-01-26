@@ -807,7 +807,8 @@ qualities.</p>
 <p><a href="../pdf/hierarchy.pdf">Growth hierarchy</a>
 <a href="../pdf/hierarchy.pdf" class="image fit"><img src="images/marr_pic.jpg" alt=""></a>
 <img alt="Hierarchy" src="../img/hierarchy.png" />
-<br>According to our design strategy with privacy gradients and the
+<img src="../img/REL_Explanation.PNG" width="500"> </p>
+<p><br>According to our design strategy with privacy gradients and the
 decision to cluster functions around hubs, a hierarchy of spaces
 arises. When the growth algorithm seeds and grows spaces, the
 matrix is used to look up which spaces should grow or “follow”
@@ -824,7 +825,6 @@ to grow towards the garden, and the garden does not indicate
 any preference for growing towards the co-cooking, a hierarchy
 arises: co-cooking follows the garden, not the other way around.</p>
 
-<p><img src="../img/REL_Explanation.PNG" width="500"> </p>
 <h4 id="voxel-size">Voxel size</h4>
 <p>Having set design goals and user perspectives, we chose a voxel size that we consider multifunctional enough to form
 spaces with different functions. This voxel size became a base for the voxel cloud used in all following computations.</p>
@@ -1000,8 +1000,7 @@ and 1 is the closest
 <p>Orient for site accessability on a specific side</p>
 </blockquote>
 <p>In accordance to pre-existing program, routes and greenery on the site,
-some spaces and entrances require access from a specific facade. By
-setting their preference to this facade, an axis is created along which the
+some spaces and entrances require access from a specific facade. By setting their preference to this facade, an axis is created along which the
 algorithm can seed the space.</p>
 <p><img src="../img/closeness to specific facade.png" width="500"> </p>
 <table><thead><tr class="header"><th>Pseudocode</th><th></th></tr></thead><tbody><tr class="odd"><td>Input</td><td>Availability lattice, custom stencil</td></tr><tr class="even"><td>Output</td><td><p>Specific facade closeness lattice</p></td></tr><tr class="odd"><td>Code</td><td><p>Define stencil as Von Neumann neighborhood with all but one neighbour

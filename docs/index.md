@@ -1,4 +1,4 @@
-# Spatial Computing Project: Group 3
+# Spatial Computing: CUB3D
 
 This is a website for the Spatial Computing project at the minor of Spatial Computing in Architectural Design at TU Delft, as given at the faculty of Architecture and the Built environment. 
 
